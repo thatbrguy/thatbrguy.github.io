@@ -70,6 +70,22 @@ body, html {
   font-family:'Mina';
 }
 
+.nav.navbar-nav.navbar-right a {
+    color: white;
+}
+
+.nav.navbar-nav.navbar-right a:hover {
+    color: #ff1a1a;
+}
+
+.navbar-inverse .navbar-brand {
+  color: white;
+}
+
+nav a:hover{
+  color: #ff1a1a !important;
+}
+
 .header{
   width:70%;
   margin: 0 auto;

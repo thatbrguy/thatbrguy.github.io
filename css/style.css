@@ -1,7 +1,6 @@
 body, html {
   height: 100%;
   width: 100%;
-  overflow-x:hidden;
 }
 
 #Page1{
@@ -14,6 +13,7 @@ body, html {
   padding-bottom:50px;
   margin-left:-15px;
   margin-right:-15px;
+  overflow-x:hidden;
 }
 
 #Page2
@@ -28,6 +28,7 @@ body, html {
   margin-right:-15px;
   padding: 0 10px 0 10px;
   height:100%;
+  overflow-x:hidden;
 }
 
 #Page3{
@@ -40,6 +41,7 @@ body, html {
   padding-bottom:50px;
   margin-left:-15px;
   margin-right:-15px;
+  overflow-x:hidden;
 }
 
 #Page5{
@@ -52,6 +54,7 @@ body, html {
   padding-bottom:50px;
   margin-left:-15px;
   margin-right:-15px;
+  overflow-x:hidden;
 }
 
 #Page7{
@@ -64,6 +67,7 @@ body, html {
   padding-bottom:50px;
   margin-left:-15px;
   margin-right:-15px;
+  overflow-x:hidden;
 }
 
 .font-nav{

@@ -1,0 +1,28 @@
+{
+    "exp": [
+        {
+            "title": "Orbuculum",
+            "desc": "Researching and experimenting on novel methods of interpreting Machine Learning Classifiers",
+            "role": "Data Science R&D",
+            "duration": "Aug 2018 to Present"
+        },
+        {
+            "title": "CloudCV",
+            "desc": "Mentoring students for Fabrik!",
+            "role": "Google Code-In Mentor",
+            "duration": "Oct 2018 to Dec 2018"
+        },
+        {
+            "title": "Orbuculum",
+            "desc": "Data Science Intern",
+            "role": "Data Science Intern",
+            "duration": "Jan 2018 to April 2018"
+        },
+        {
+            "title": "Yet Another Hackathon",
+            "desc": "Built ML Algo that was cooolslsllslsl",
+            "role": "People's Choice Award",
+            "duration": "Aug 2018"
+        }
+    ]
+}

@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import {Navbar, Nav, NavItem} from 'react-bootstrap';
 import Masonry from 'react-masonry-component';
 
-import './App.css';
 import expData from './exp.json';
 import portfolioData from './portfolio.json';
 import { Link, Element } from 'react-scroll';
@@ -37,7 +36,7 @@ class NavbarBR extends Component {
           </Navbar.Brand>
           <Navbar.Toggle />
         </Navbar.Header>
-        <Navbar.Collapse>
+        <Navbar.Collapse className="navbar-collapse-xs">
           <Nav pullRight className={this.props.styleProps.navrightClass}>
             <NavItem eventKey={1}>
               <Link to="about" smooth={true} offset={-50} className='navlink'>
@@ -190,17 +189,56 @@ class PortfolioCard extends Component{
 class About extends Component {
   render(){
     return(
-      <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at interdum purus. Sed aliquet felis eget nunc consequat laoreet. Duis vehicula justo non porttitor tempor. Nulla facilisi. Morbi sed dui tincidunt, pharetra elit efficitur, gravida turpis. Sed a placerat urna. Aenean accumsan, diam sed aliquam facilisis, purus justo euismod leo, eu gravida est neque quis libero. Morbi gravida dolor eu dolor condimentum dictum eget in ligula. Cras eget arcu egestas, sodales ligula vitae, posuere odio. Nam sollicitudin rutrum arcu, id tincidunt nisl. Praesent dignissim feugiat justo at euismod. Fusce eu lectus ut neque blandit finibus. Etiam sagittis neque ornare aliquet malesuada. Morbi dictum mollis commodo. Nulla facilisi.
 
-Donec laoreet imperdiet velit, mollis scelerisque metus elementum eu. Etiam ligula sem, congue et imperdiet vitae, iaculis at arcu. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ante ex, tincidunt id metus vitae, iaculis placerat est. Nam iaculis sem nisi, quis ultricies velit ornare sed. Nam suscipit tortor augue, eu aliquet lectus viverra in.
 
-Suspendisse vitae malesuada lacus. Suspendisse egestas varius erat, sit amet finibus leo porttitor eu. Mauris varius varius ex, a egestas turpis sagittis sit amet. Cras vehicula leo id nisl hendrerit, et dictum eros sollicitudin. Sed tempor diam vitae nisi malesuada scelerisque. Cras eget arcu vehicula, luctus massa a, rutrum turpis. Morbi sit amet elementum dolor, faucibus fringilla nunc. Maecenas vitae condimentum arcu. Integer pretium, dui at pretium gravida, nibh ante accumsan lacus, sit amet dictum sapien dui ut tortor. Nunc vestibulum, ex eget porttitor aliquet, justo enim molestie orci, quis scelerisque odio nunc eget elit. Suspendisse id ipsum fermentum, ultricies mi ac, bibendum velit. Sed ante augue, pulvinar id cursus vitae, porttitor et mauris. Suspendisse ornare commodo nisi, vitae dapibus lorem eleifend molestie. Proin elementum egestas neque, in suscipit lectus ultricies vitae. Etiam eget mi sagittis, placerat dolor ut, dictum leo. Vivamus nec arcu congue, interdum risus nec, consectetur dui.
 
-Integer mauris ligula, ullamcorper ut hendrerit vitae, interdum ut nibh. Proin in auctor turpis. Phasellus vulputate magna at semper malesuada. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Curabitur vel felis sit amet orci commodo auctor at mattis lacus. Cras maximus eleifend laoreet. Nam interdum sem ut felis sollicitudin, a aliquam nunc luctus. Nam tristique purus nec velit lacinia suscipit. Duis vel suscipit metus, eu placerat libero. Praesent eu lacinia justo. Nunc eget vestibulum nunc. Nunc ac vulputate nunc, eget tristique ipsum. Aliquam erat volutpat. Vestibulum non sem lacinia, auctor ligula non, laoreet massa.
 
-Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam neque lectus, vulputate viverra ipsum eget, laoreet consequat leo. Mauris vitae nulla lorem. Fusce finibus arcu sem, ac luctus lectus congue vel. Nunc accumsan, leo ultricies mollis consequat, mi dui interdum nisl, id suscipit lectus metus eu erat. Cras a turpis sed enim suscipit sollicitudin non vitae ipsum. Nam odio nisl, rhoncus non tristique quis, convallis at libero. Etiam iaculis congue turpis. Praesent faucibus tellus sed sapien imperdiet accumsan. Nunc condimentum leo ut quam rhoncus, sed fringilla metus tincidunt. Nunc fermentum maximus ex, ac auctor diam pharetra fermentum. Integer sit amet efficitur sem. Nam maximus orci vel egestas vehicula. Pellentesque ut dui id velit malesuada efficitur ut eu velit.
-      </p>
+    <div className="container">
+
+      <div className="row about">
+
+        <div className="col-lg-5 col-md-5 col-sm-5 col-xs-12 about-me-img">
+          <img className="img-responsive" src="/me.jpg" alt="" />
+        </div>
+
+        <div className="col-lg-7 col-md-7 col-sm-7 col-xs-12 about-me-text">
+          <h1>Meet Bharath.</h1>
+          <p>Bharath Raj is currently an undergrad at SSN College of Engineering. 
+             Bharath Raj is currently an undergrad at SSN College of Engineering. 
+             Bharath Raj is currently an undergrad at SSN College of Engineering. 
+             Bharath Raj is currently an undergrad at SSN College of Engineering. 
+             Bharath Raj is currently an undergrad at SSN College of Engineering. 
+             Bharath Raj is currently an undergrad at SSN College of Engineering. 
+             Bharath Raj is currently an undergrad at SSN College of Engineering. </p>
+          <p>Bharath Raj is currently an undergrad at SSN College of Engineering. 
+             Bharath Raj is currently an undergrad at SSN College of Engineering. 
+             Bharath Raj is currently an undergrad at SSN College of Engineering. 
+             Bharath Raj is currently an undergrad at SSN College of Engineering. 
+             Bharath Raj is currently an undergrad at SSN College of Engineering. 
+             Bharath Raj is currently an undergrad at SSN College of Engineering. 
+             Bharath Raj is currently an undergrad at SSN College of Engineering. </p>  
+          <p>Bharath Raj is currently an undergrad at SSN College of Engineering. 
+             Bharath Raj is currently an undergrad at SSN College of Engineering. 
+             Bharath Raj is currently an undergrad at SSN College of Engineering. 
+             Bharath Raj is currently an undergrad at SSN College of Engineering. 
+             Bharath Raj is currently an undergrad at SSN College of Engineering. 
+             Bharath Raj is currently an undergrad at SSN College of Engineering. 
+             Bharath Raj is currently an undergrad at SSN College of Engineering. </p> 
+          <p>Bharath Raj is currently an undergrad at SSN College of Engineering. 
+             Bharath Raj is currently an undergrad at SSN College of Engineering. 
+             Bharath Raj is currently an undergrad at SSN College of Engineering. 
+             Bharath Raj is currently an undergrad at SSN College of Engineering. 
+             Bharath Raj is currently an undergrad at SSN College of Engineering. 
+             Bharath Raj is currently an undergrad at SSN College of Engineering. 
+             Bharath Raj is currently an undergrad at SSN College of Engineering. </p> 
+        </div>
+
+      </div>
+
+    </div>
+
+
+
     )
   }
 }
@@ -288,6 +326,7 @@ class SectionBreak extends Component {
     const sectionBreakStyle = {
       background: "#fff",
       height: "100px",
+      textAlign: "center"
     }
     const textStyle = {
       paddingTop: "29px"
@@ -356,28 +395,14 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
+      <div>
         <Element name="home"></Element>
         <NavbarBR  styleProps={this.state} />
-        <h1 style={{color: "#fff", paddingTop: "70px"}}>Issa Me</h1>
-
-        <h2 style={{color: "#fff"}}>
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at interdum purus. Sed aliquet felis eget nunc consequat laoreet. Duis vehicula justo non porttitor tempor. Nulla facilisi. Morbi sed dui tincidunt, pharetra elit efficitur, gravida turpis. Sed a placerat urna. Aenean accumsan, diam sed aliquam facilisis, purus justo euismod leo, eu gravida est neque quis libero. Morbi gravida dolor eu dolor condimentum dictum eget in ligula. Cras eget arcu egestas, sodales ligula vitae, posuere odio. Nam sollicitudin rutrum arcu, id tincidunt nisl. Praesent dignissim feugiat justo at euismod. Fusce eu lectus ut neque blandit finibus. Etiam sagittis neque ornare aliquet malesuada. Morbi dictum mollis commodo. Nulla facilisi.
-
-Donec laoreet imperdiet velit, mollis scelerisque metus elementum eu. Etiam ligula sem, congue et imperdiet vitae, iaculis at arcu. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ante ex, tincidunt id metus vitae, iaculis placerat est. Nam iaculis sem nisi, quis ultricies velit ornare sed. Nam suscipit tortor augue, eu aliquet lectus viverra in.
-
-Suspendisse vitae malesuada lacus. Suspendisse egestas varius erat, sit amet finibus leo porttitor eu. Mauris varius varius ex, a egestas turpis sagittis sit amet. Cras vehicula leo id nisl hendrerit, et dictum eros sollicitudin. Sed tempor diam vitae nisi malesuada scelerisque. Cras eget arcu vehicula, luctus massa a, rutrum turpis. Morbi sit amet elementum dolor, faucibus fringilla nunc. Maecenas vitae condimentum arcu. Integer pretium, dui at pretium gravida, nibh ante accumsan lacus, sit amet dictum sapien dui ut tortor. Nunc vestibulum, ex eget porttitor aliquet, justo enim molestie orci, quis scelerisque odio nunc eget elit. Suspendisse id ipsum fermentum, ultricies mi ac, bibendum velit. Sed ante augue, pulvinar id cursus vitae, porttitor et mauris. Suspendisse ornare commodo nisi, vitae dapibus lorem eleifend molestie. Proin elementum egestas neque, in suscipit lectus ultricies vitae. Etiam eget mi sagittis, placerat dolor ut, dictum leo. Vivamus nec arcu congue, interdum risus nec, consectetur dui.
-
-Integer mauris ligula, ullamcorper ut hendrerit vitae, interdum ut nibh. Proin in auctor turpis. Phasellus vulputate magna at semper malesuada. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Curabitur vel felis sit amet orci commodo auctor at mattis lacus. Cras maximus eleifend laoreet. Nam interdum sem ut felis sollicitudin, a aliquam nunc luctus. Nam tristique purus nec velit lacinia suscipit. Duis vel suscipit metus, eu placerat libero. Praesent eu lacinia justo. Nunc eget vestibulum nunc. Nunc ac vulputate nunc, eget tristique ipsum. Aliquam erat volutpat. Vestibulum non sem lacinia, auctor ligula non, laoreet massa.
-
-Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam neque lectus, vulputate viverra ipsum eget, laoreet consequat leo. Mauris vitae nulla lorem. Fusce finibus arcu sem, ac luctus lectus congue vel. Nunc accumsan, leo ultricies mollis consequat, mi dui interdum nisl, id suscipit lectus metus eu erat. Cras a turpis sed enim suscipit sollicitudin non vitae ipsum. Nam odio nisl, rhoncus non tristique quis, convallis at libero. Etiam iaculis congue turpis. Praesent faucibus tellus sed sapien imperdiet accumsan. Nunc condimentum leo ut quam rhoncus, sed fringilla metus tincidunt. Nunc fermentum maximus ex, ac auctor diam pharetra fermentum. Integer sit amet efficitur sem. Nam maximus orci vel egestas vehicula. Pellentesque ut dui id velit malesuada efficitur ut eu velit.
-       
-       </h2>
-       <Element name='about'>
-          <SectionBreak section={'About Me'} />
-       </Element>
-       <div>
+        <div className = 'intro' >
+          <p>Research.</p> <p>Code.</p> <p>Blog.</p>
+       </div>
+       <Element name='about'></Element>
+       <div style={{backgroundColor:"white"}}>
           <About />
        </div>
        <Element name='portfolio'>

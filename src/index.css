@@ -13,6 +13,34 @@ code {
     monospace;
 }
 
+.intro{
+	color: #fff;
+	padding: 120px 20px 30px 13vh;
+	font-size: 50px;
+}
+
+.intro p{
+	display: inline-block;
+}
+
+/* About START */
+
+
+.about{
+	color: black;
+	text-align: left;
+	padding: 20px 0px 20px 0;
+}
+
+img{
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;}
+
+/* About END */
+
+
+/* Navbar style START */
 .navlink {
 	color: #999;
 }
@@ -22,7 +50,6 @@ code {
 	text-decoration: none;
 }
 
-/* Navbar style START */
 .navbar-trans{
 	background: transparent;
 	border-color: transparent;
@@ -39,6 +66,12 @@ code {
 	min-height: 30px;
 	transition: 0.4s;
 }
+
+/*
+.navbar-collapse-xs{
+	background: red;
+	border-color: transparent;
+} */
 
 .navbrand-font-lg {
 	padding-top: 40px;
@@ -68,6 +101,7 @@ code {
 .filter-button-style{
 	padding-top: 20px;
 	padding-bottom: -10px;
+	text-align: center;
 }
 .project-padding{
 	padding: 10px 10px 10px 10px;
@@ -171,11 +205,13 @@ code {
 /* Place the container to the left */
 .left {
   left: 0;
+  text-align: right;
 }
 
 /* Place the container to the right */
 .right {
   left: 50%;
+  text-align: left;
 }
 
 .right::after {
@@ -246,5 +282,20 @@ code {
   .right {
     left: 0%;
   }
+
+  .left{
+  	text-align: left;
+  }
+
+  .intro{
+	color: #fff;
+	padding: 120px 20px 30px 20px;
+	font-size: 50px;
+  }
+
+   .intro p{
+	 display: block;
+  }
+
 }
 /* Timeline END */

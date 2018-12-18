@@ -64,7 +64,7 @@ class ExperienceCard extends Component{
   render(){
     return(
 
-      <div className={this.props.data.class}>
+      <div className="timeline-element right">
         <div className="timeline-content">
           <h2>{this.props.data.title}</h2>
           <h4>{this.props.data.role}</h4>
@@ -84,11 +84,6 @@ class Experience extends Component{
     for(let i=0; i < expData.exp.length; i++)
     {
       let data = expData.exp[i];
-      if(i % 2 === 0)
-        data['class'] = "timeline-element left";
-      else
-        data['class'] = "timeline-element left"
-
       experienceCards.push(<ExperienceCard data={data}/>)
     }
 
@@ -339,6 +334,73 @@ class SectionBreak extends Component {
   }
 }
 
+class SkillsIcon extends Component {
+  render() {
+    return(
+      <div>
+        <div className="icon-bg-style">
+          <i className={this.props.iconClass}></i>
+        </div>
+        <div className="skills-text">
+          <p>{this.props.skillText}</p>
+        </div>
+        <div>
+          <p>List of skills!</p>
+        </div>
+      </div>
+    )
+  }
+}
+
+class Skills extends Component {
+  render() {
+    return(
+      <div style={{color:"white"}}>
+          <h2>Acheivements</h2>
+          <p>Bharath Raj is currently an undergrad at SSN College of Engineering. 
+             Bharath Raj is currently an undergrad at SSN College of Engineering. 
+             Bharath Raj is currently an undergrad at SSN College of Engineering. 
+             Bharath Raj is currently an undergrad at SSN College of Engineering. 
+             Bharath Raj is currently an undergrad at SSN College of Engineering. 
+             Bharath Raj is currently an undergrad at SSN College of Engineering. 
+             Bharath Raj is currently an undergrad at SSN College of Engineering. </p>
+          <p>Bharath Raj is currently an undergrad at SSN College of Engineering. 
+             Bharath Raj is currently an undergrad at SSN College of Engineering. 
+             Bharath Raj is currently an undergrad at SSN College of Engineering. 
+             Bharath Raj is currently an undergrad at SSN College of Engineering. 
+             Bharath Raj is currently an undergrad at SSN College of Engineering. 
+             Bharath Raj is currently an undergrad at SSN College of Engineering. 
+             Bharath Raj is currently an undergrad at SSN College of Engineering. </p>  
+          <h2>Skills</h2>
+          <div>
+            <SkillsIcon iconClass="fas fa-code icon-style" skillText="Code" />
+            <SkillsIcon iconClass="fab fa-react icon-style" skillText="Development" />
+            <SkillsIcon iconClass="fas fa-fire icon-style" skillText="Frameworks" />
+          </div>  
+      </div>
+    )
+  }
+}
+
+class ExpSkillsGird extends Component {
+  render() {
+    return(
+
+      <div className="container">
+        <div className="row">
+          <div className="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+              <Experience />
+          </div>
+          <div className="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+              <Skills />
+          </div>
+        </div>
+      </div>
+
+    )
+  }
+}
+
 
 class App extends Component {
 
@@ -414,9 +476,7 @@ class App extends Component {
        <Element name='exp'>
           <SectionBreak section={'Experience'} />
        </Element>
-       <div style={{background: "#333"}}>
-          <Experience />
-       </div>
+       <ExpSkillsGird style={{background: "#333"}}/>
       </div>
     );
   }

@@ -60,133 +60,9 @@ class NavbarBR extends Component {
   }
 }
 
-class ExperienceCard extends Component{
-  render(){
-    return(
-
-      <div className="timeline-element right">
-        <div className="timeline-content">
-          <h2>{this.props.data.title}</h2>
-          <h4>{this.props.data.role}</h4>
-          <h6>{this.props.data.duration}</h6>
-          <p>{this.props.data.desc}</p>
-        </div>
-      </div>
-
-    )
-  }
-}
-
-class Experience extends Component{
-
-  loopThroughJson(){
-    let experienceCards = [];
-    for(let i=0; i < expData.exp.length; i++)
-    {
-      let data = expData.exp[i];
-      experienceCards.push(<ExperienceCard data={data}/>)
-    }
-
-    return(
-      <div>
-        {experienceCards}
-      </div>
-    )
-  }
-
-  render(){
-    return(
-      <div className="timeline">
-        {this.loopThroughJson()}
-      </div>
-    )
-  }
-}
-
-class PortfolioCard extends Component{
-  
-  handleLinks() {
-
-    let linkArray = this.props.element.linkArray;
-    let linkTextArray = this.props.element.linkTextArray;
-    if(linkArray === '')
-      return
-    else {
-      let links = [], text = [];  
-      if(linkArray[0] === ';'){
-        links = linkArray.substr(1, linkArray.length - 2).split(';;');
-        text = linkTextArray.substr(1, linkTextArray.length - 2).split(';;');
-      }
-      else{
-        links.push(linkArray);
-        text.push(linkTextArray);
-      }
-      let htmlLinks = [];
-      for(let i=0; i < links.length; i++)
-        htmlLinks.push(
-          <span>
-            [<a href={links[i].trim()} 
-                target='_blank' 
-                rel="noopener noreferrer">{text[i].trim()}</a>]
-          </span>); 
-      
-      return <div>{htmlLinks}</div>
-    }
-  }
-
-  handleImgSrc() {
-    let src;
-    if(this.props.element.src === '')
-      src = 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Logo_CODE.svg/2000px-Logo_CODE.svg.png';
-    else
-      src = this.props.element.src;
-    return src;
-  }
-
-  render() {
-
-    let cardStyle = {
-      width: "277px",
-      height: "auto",
-      background: "#EEE",
-      boxShadow:"0px -3px 0px "+ this.props.element.color +" inset",
-      borderRadius: "10px",
-      color: "black",
-      textAlign: "left",
-      paddingBottom: "30px"
-    }
-
-    let imgStyle = {
-      borderTopLeftRadius: "10px",
-      borderTopRightRadius: "10px",
-      marginBottom: "-10px"
-    }
-
-    // If you ever modify color, please do change it in the stylesheet
-    // for links as well.
-    let linkClass = 'link-style ' + this.props.element.tag + '-style';
-    //const src = 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Logo_CODE.svg/2000px-Logo_CODE.svg.png'
-    //const src = 'https://cdn-images-1.medium.com/max/1116/1*dUiiquKeRQFRhZ82ix4ICw.jpeg'
-
-    return(
-      <div style={cardStyle} 
-      className={this.props.filter[this.props.element.tag] ? this.props.element.tag: null}>
-        <img style={imgStyle} width='277px' src={this.handleImgSrc()} alt='img'/>
-        <h3 style={{paddingLeft: "3px"}}>{this.props.element.title}</h3>
-        <p style={{paddingLeft: "3px"}}>{this.props.element.desc}</p>
-        <div className={linkClass}>{this.handleLinks()}</div>
-      </div>
-    )
-  }
-}
-
-
 class About extends Component {
   render(){
     return(
-
-
-
 
     <div className="container">
 
@@ -232,8 +108,166 @@ class About extends Component {
 
     </div>
 
+    )
+  }
+}
 
+class ExperienceCard extends Component{
+  render(){
+    return(
 
+      <div className="timeline-element right">
+        <div className="timeline-content">
+          <h2>{this.props.data.title}</h2>
+          <h4>{this.props.data.role}</h4>
+          <h6>{this.props.data.duration}</h6>
+          <p>{this.props.data.desc}</p>
+        </div>
+      </div>
+
+    )
+  }
+}
+
+class Experience extends Component{
+
+  loopThroughJson(){
+    let experienceCards = [];
+    for(let i=0; i < expData.exp.length; i++)
+    {
+      let data = expData.exp[i];
+      experienceCards.push(<ExperienceCard data={data}/>)
+    }
+
+    return(
+      <div>
+        {experienceCards}
+      </div>
+    )
+  }
+
+  render(){
+    return(
+      <div className="timeline">
+        {this.loopThroughJson()}
+      </div>
+    )
+  }
+}
+
+class PortfolioCard extends Component{
+  
+  extractLinks() {
+
+    let linkArray = this.props.element.linkArray;
+    let linkTextArray = this.props.element.linkTextArray;
+    let links = [], text = [], count = 0;
+    let linkData = {
+      'links': links,
+      'text': text,
+      'count': count
+    };
+
+    if(linkArray === '')
+      return linkData
+    else {
+      if(linkArray[0] === ';'){
+        links = linkArray.substr(1, linkArray.length - 2).split(';;');
+        text = linkTextArray.substr(1, linkTextArray.length - 2).split(';;');
+      }
+      else{
+        links.push(linkArray);
+        text.push(linkTextArray);
+      }
+      count = links.length;
+    }
+
+    linkData = {
+      'links': links,
+      'text': text,
+      'count': count
+    };
+
+    return linkData
+
+  }
+
+  handleLinks(linkData) {
+
+    let links = linkData.links;
+    let text = linkData.text;
+    let count = linkData.count;
+    let htmlLinks =  [];
+
+    if(count > 0)
+    {
+    for(let i=0; i < links.length; i++)
+      htmlLinks.push(
+        <div>
+          [<a href={links[i].trim()} 
+              target='_blank' 
+              rel="noopener noreferrer">{text[i].trim()}</a>]
+        </div>); 
+    
+      return <div>{htmlLinks}</div>
+    }
+    else
+      return ''
+  }
+
+  handleImgSrc() {
+    let src;
+    if(this.props.element.src === '')
+      src = 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Logo_CODE.svg/2000px-Logo_CODE.svg.png';
+    else
+      src = this.props.element.src;
+    return src;
+  }
+
+  padBottomLinks(count) {
+    if(count === 3)
+      return "65px"
+    else if(count === 2)
+      return "45px"
+    else if(count === 1)
+      return "25px"
+  }
+
+  render() {
+
+    let linkData = this.extractLinks();
+
+    let cardStyle = {
+      width: "155px",
+      height: "auto",
+      background: "#EEE",
+      boxShadow:"0px -3px 0px "+ this.props.element.color +" inset",
+      borderRadius: "10px",
+      color: "black",
+      textAlign: "left",
+      paddingBottom: this.padBottomLinks(linkData.count)
+    }
+
+    let imgStyle = {
+      borderTopLeftRadius: "10px",
+      borderTopRightRadius: "10px",
+      marginBottom: "-10px"
+    }
+
+    // If you ever modify color, please do change it in the stylesheet
+    // for links as well.
+    let linkClass = 'link-style ' + this.props.element.tag + '-style';
+    //const src = 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Logo_CODE.svg/2000px-Logo_CODE.svg.png'
+    //const src = 'https://cdn-images-1.medium.com/max/1116/1*dUiiquKeRQFRhZ82ix4ICw.jpeg'
+
+    return(
+      <div style={cardStyle} 
+      className={this.props.filter[this.props.element.tag] ? this.props.element.tag: null}>
+        <img style={imgStyle} width='155px' src={this.handleImgSrc()} alt='img'/>
+        <h3 style={{paddingLeft: "3px"}}>{this.props.element.title}</h3>
+        <p style={{paddingLeft: "3px"}}>{this.props.element.desc}</p>
+        <div className={linkClass}>{this.handleLinks(linkData)}</div>
+      </div>
     )
   }
 }
@@ -266,8 +300,8 @@ class Gallery extends Component {
 
     calculateLeftPad(){
       let leftPad;
-      const singleUnitWidth = 297; //277 width + 20 pad
-      const minLeftPad = 20;
+      const singleUnitWidth = 160 + 10; //277 width + 20 pad
+      const minLeftPad = 10; // 10
       // let singleCard = singleUnitWidth + minLeftPad;
       let doubleCard = singleUnitWidth * 2 + minLeftPad;
       let tripleCard = singleUnitWidth * 3 + minLeftPad;

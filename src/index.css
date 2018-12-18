@@ -126,12 +126,15 @@ code {
 	padding-bottom: -10px;
 	text-align: center;
 }
+
+/* 5 FOR MOBILE 10 FOR PC */
+
 .project-padding{
-	padding: 10px 10px 10px 10px;
+	padding: 5px 5px 5px 5px;
 }
 
 .blog-padding{
-	padding: 10px 10px 10px 10px;
+	padding: 5px 5px 5px 5px;
 }
 
 .no-padding{

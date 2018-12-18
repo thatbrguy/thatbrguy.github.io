@@ -345,7 +345,7 @@ class SkillsIcon extends Component {
           <p>{this.props.skillText}</p>
         </div>
         <div>
-          <p>List of skills!</p>
+          <p>Nice, Nice, Nice, Nice, Nice, Nice, Nice, Nice, Nice, Nice</p>
         </div>
       </div>
     )
@@ -353,24 +353,58 @@ class SkillsIcon extends Component {
 }
 
 class Skills extends Component {
+
+  acheivements(){
+    let htmlList = []
+    let acheivementList = [
+    {
+      'acheivement': "People's Choice Award - Yet Another Hackathon",
+      'date': 'August 2018',
+      'desc': 'yeayyyyyyyyyy'
+    },
+    {
+      'acheivement': 'Runner Up - Data Science Challenge',
+      'date': 'April 2018',
+      'desc': 'yeayyyyyyyyyy'
+    },
+    {
+      'acheivement': 'Runner Up - AWS Deep Learning Hackathon',
+      'date': 'January 2018',
+      'desc': 'yeayyyyyyyyyy'
+    },
+    {
+      'acheivement': 'First Place - Project Display',
+      'date': 'August 2017',
+      'desc': 'yeayyyyyyyyyy'
+    },
+    ]
+
+    for(let i = 0; i < acheivementList.length; i++)
+    {
+      let data = acheivementList[i];
+      htmlList.push(
+        <li>
+          <h4>{data.acheivement}</h4>
+          <h6>{data.date}</h6>
+          <p>{data.desc}</p>
+        </li>
+      );
+    }
+
+    return(
+      <div>
+        <ul>
+          {htmlList}
+        </ul>
+      </div>
+    )
+  }
+
   render() {
     return(
       <div style={{color:"white"}}>
           <h2>Acheivements</h2>
-          <p>Bharath Raj is currently an undergrad at SSN College of Engineering. 
-             Bharath Raj is currently an undergrad at SSN College of Engineering. 
-             Bharath Raj is currently an undergrad at SSN College of Engineering. 
-             Bharath Raj is currently an undergrad at SSN College of Engineering. 
-             Bharath Raj is currently an undergrad at SSN College of Engineering. 
-             Bharath Raj is currently an undergrad at SSN College of Engineering. 
-             Bharath Raj is currently an undergrad at SSN College of Engineering. </p>
-          <p>Bharath Raj is currently an undergrad at SSN College of Engineering. 
-             Bharath Raj is currently an undergrad at SSN College of Engineering. 
-             Bharath Raj is currently an undergrad at SSN College of Engineering. 
-             Bharath Raj is currently an undergrad at SSN College of Engineering. 
-             Bharath Raj is currently an undergrad at SSN College of Engineering. 
-             Bharath Raj is currently an undergrad at SSN College of Engineering. 
-             Bharath Raj is currently an undergrad at SSN College of Engineering. </p>  
+          {this.acheivements()}
           <h2>Skills</h2>
           <div>
             <SkillsIcon iconClass="fas fa-code icon-style" skillText="Code" />

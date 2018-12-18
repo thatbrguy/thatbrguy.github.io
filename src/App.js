@@ -398,7 +398,7 @@ class App extends Component {
       <div>
         <Element name="home"></Element>
         <NavbarBR  styleProps={this.state} />
-        <div className = 'intro' >
+        <div className = 'container intro' >
           <p>Research.</p> <p>Code.</p> <p>Blog.</p>
        </div>
        <Element name='about'></Element>

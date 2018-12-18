@@ -158,6 +158,7 @@ code {
   box-sizing: border-box;
 }
 
+
 .timeline {
   position: relative;
   max-width: 1200px;
@@ -172,16 +173,25 @@ code {
   background-color: white;
   top: 0;
   bottom: 0;
-  left: 50%;
+  left: 31px;
   margin-left: -3px;
 }
 
+
 .timeline-element {
-  padding: 10px 40px;
-  position: relative;
-  background-color: inherit;
-  width: 50%;
+	padding: 10px 40px;
+	position: relative;
+	background-color: inherit;
+	width: 50%;
+	padding-left: 70px;
 }
+
+.timeline-element::before {
+    left: 52px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
 
 /* The circles on the timeline */
 .timeline-element::after {
@@ -197,6 +207,8 @@ code {
   z-index: 1;
 }
 
+
+
 /* Place the container to the left */
 .left {
   left: 0;
@@ -209,9 +221,10 @@ code {
   text-align: left;
 }
 
-.right::after {
-  left: -20px;
+.left::after{
+left: 11px;
 }
+
 
 /* The actual content */
 .timeline-content {

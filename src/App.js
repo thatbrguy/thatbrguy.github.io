@@ -87,7 +87,7 @@ class Experience extends Component{
       if(i % 2 === 0)
         data['class'] = "timeline-element left";
       else
-        data['class'] = "timeline-element right"
+        data['class'] = "timeline-element left"
 
       experienceCards.push(<ExperienceCard data={data}/>)
     }

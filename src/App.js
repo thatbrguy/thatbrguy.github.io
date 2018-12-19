@@ -282,7 +282,8 @@ class Gallery extends Component {
           active: {
             blog: false,
             project: false
-          }
+          },
+          collapse: this.props.linkStates
         };
         this.toggleClass = this.toggleClass.bind(this);
       
@@ -350,8 +351,6 @@ class Gallery extends Component {
         let childElements = [];
         let elements = this.props.elements;
         let currentState = this.state.active;
-        //We need two states. Check based on state.
-        // +lg, +sm to paddingclass based on width
 
         for(let i=0; i < elements.length; i++){
           childElements.push(
@@ -362,17 +361,6 @@ class Gallery extends Component {
             </li>
           );
         }
-
-        /*
-        const childElements = this.props.elements.map(function(element){
-           return (
-                <li className={currentState[element.tag] ?
-                              'no-padding' :
-                               smallOrLargeClass(element.tagPaddingClass, width)}>
-                    <PortfolioCard element={element} filter={currentState} width={width} />
-                </li>
-            );
-        });*/
     
         return (
           <div className='portfolio-style'>
@@ -521,8 +509,8 @@ class App extends Component {
       navrightClass: window.innerWidth > 800? "navbar-right-lg" : "navbar-right-xs",
       width:window.innerWidth
     };
-    this.updateHeight = this.updateHeight.bind(this)
-    this.updateWidth = this.updateWidth.bind(this)
+    this.updateHeight = this.updateHeight.bind(this);
+    this.updateWidth = this.updateWidth.bind(this);
   }
 
   // Called when scrolled
@@ -563,6 +551,14 @@ class App extends Component {
     window.removeEventListener('resize', this.updateWidth);
   }
 
+  getLinkCollapseState() {
+    let linkStates = {};
+    for(let i=0; i < portfolioData.portfolio.length; i++){
+      linkStates['element' + i] = false;
+    }
+    return linkStates;
+  }
+
   render() {
     return (
       <div>
@@ -579,7 +575,7 @@ class App extends Component {
           <SectionBreak section={'Portfolio'} />
        </Element>
        <div>
-          <Gallery elements={portfolioData.portfolio} width={this.state.width} />
+          <Gallery elements={portfolioData.portfolio} width={this.state.width} linkStates={this.getLinkCollapseState()} />
        </div>
        <Element name='exp'>
           <SectionBreak section={'Experience'} />

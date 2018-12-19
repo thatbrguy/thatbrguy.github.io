@@ -300,22 +300,36 @@ class Gallery extends Component {
 
     calculateLeftPad(){
       let leftPad;
-      const singleUnitWidth = 160 + 10; //277 width + 20 pad
-      const minLeftPad = 10; // 10
-      // let singleCard = singleUnitWidth + minLeftPad;
-      let doubleCard = singleUnitWidth * 2 + minLeftPad;
-      let tripleCard = singleUnitWidth * 3 + minLeftPad;
-      let quadCard = singleUnitWidth * 4 + minLeftPad;
+
+      const singleUnitWidthSmall = 160 + 10; //160 width + 10 pad
+      const minLeftPadSmall = 10; // 10
+      const singleUnitWidthLarge = 297; //277 width + 20 pad
+      const minLeftPadLarge = 20; // 20
+      
+      const doubleCardSmall = singleUnitWidthSmall * 2 + minLeftPadSmall;
+      const tripleCardSmall = singleUnitWidthSmall * 3 + minLeftPadSmall;
+      const quadCardSmall = singleUnitWidthSmall * 4 + minLeftPadSmall;
+      const pentaCardSmall = singleUnitWidthSmall * 5 + minLeftPadSmall;
+
+      const doubleCardLarge = singleUnitWidthLarge * 2 + minLeftPadLarge;
+      const tripleCardLarge = singleUnitWidthLarge * 3 + minLeftPadLarge;
+      const quadCardLarge = singleUnitWidthLarge * 4 + minLeftPadLarge;
       // Change calculation to be dynamic.
 
-      if(this.props.width <= doubleCard)
-        leftPad = Math.floor((this.props.width - (singleUnitWidth)) / 2);
-      else if(this.props.width > doubleCard && this.props.width <= tripleCard)
-        leftPad = Math.floor((this.props.width - (singleUnitWidth * 2)) / 2);
-      else if(this.props.width > tripleCard && this.props.width <= quadCard)
-        leftPad = Math.floor((this.props.width - (singleUnitWidth * 3)) / 2);
-      else if(this.props.width > quadCard)
-        leftPad = Math.floor((this.props.width - (singleUnitWidth * 4)) / 2);
+      if(this.props.width <= doubleCardSmall)
+        leftPad = Math.floor((this.props.width - (singleUnitWidthSmall)) / 2);
+      else if(this.props.width > doubleCardSmall && this.props.width <= tripleCardSmall)
+        leftPad = Math.floor((this.props.width - (singleUnitWidthSmall * 2)) / 2);
+      else if(this.props.width > tripleCardSmall && this.props.width <= quadCardSmall)
+        leftPad = Math.floor((this.props.width - (singleUnitWidthSmall * 3)) / 2);
+      else if(this.props.width > quadCardSmall && this.props.width <= pentaCardSmall)
+        leftPad = Math.floor((this.props.width - (singleUnitWidthSmall * 4)) / 2);
+      else if(this.props.width > pentaCardSmall && this.props.width <= tripleCardLarge)
+        leftPad = Math.floor((this.props.width - (singleUnitWidthLarge * 2)) / 2);
+      else if(this.props.width > tripleCardLarge && this.props.width <= quadCardLarge)
+        leftPad = Math.floor((this.props.width - (singleUnitWidthLarge * 3)) / 2);
+      else if(this.props.width > quadCardLarge)
+        leftPad = Math.floor((this.props.width - (singleUnitWidthLarge * 4)) / 2);
 
       let padding = {
         "paddingLeft": leftPad.toString() + "px"
@@ -323,13 +337,32 @@ class Gallery extends Component {
       return padding;
     }
 
+    smallOrLargeClass(baseClassName, width) {
+
+      const singleUnitWidthSmall = 160 + 10; //160 width + 10 pad
+      const minLeftPadSmall = 10; // 10
+      const pentaCardSmall = singleUnitWidthSmall * 5 + minLeftPadSmall;
+      let className;
+
+      if(width > pentaCardSmall)
+        className = baseClassName + '-lg';
+      else if (width < pentaCardSmall)
+        className = baseClassName + '-sm';
+
+      return className;
+    }
+
     render() {
         let currentState = this.state.active;
+        let smallOrLargeClass = this.smallOrLargeClass;
+        let width = this.props.width;
         //We need two states. Check based on state.
         // +lg, +sm to paddingclass based on width
         const childElements = this.props.elements.map(function(element){
            return (
-                <li className={currentState[element.tag] ? 'no-padding' : element.tagPaddingClass}>
+                <li className={currentState[element.tag] ?
+                              'no-padding' :
+                               console.log(smallOrLargeClass(element.tagPaddingClass, width))}>
                     <PortfolioCard element={element} filter={currentState} />
                 </li>
             );

@@ -129,11 +129,11 @@ code {
 
 /* 5 FOR MOBILE (sm) 10 FOR PC (lg) */
 
-.project-padding{
+.project-padding-sm{
 	padding: 5px 5px 5px 5px;
 }
 
-.blog-padding{
+.blog-padding-sm{
 	padding: 5px 5px 5px 5px;
 }
 

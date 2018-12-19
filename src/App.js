@@ -238,7 +238,7 @@ class PortfolioCard extends Component{
     let linkData = this.extractLinks();
 
     let cardStyle = {
-      width: "155px",
+      width: this.props.width > 850 ? "277px" : "160px",
       height: "auto",
       background: "#EEE",
       boxShadow:"0px -3px 0px "+ this.props.element.color +" inset",
@@ -256,6 +256,7 @@ class PortfolioCard extends Component{
 
     // If you ever modify color, please do change it in the stylesheet
     // for links as well.
+    console.log(this.props.width);
     let linkClass = 'link-style ' + this.props.element.tag + '-style';
     //const src = 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Logo_CODE.svg/2000px-Logo_CODE.svg.png'
     //const src = 'https://cdn-images-1.medium.com/max/1116/1*dUiiquKeRQFRhZ82ix4ICw.jpeg'
@@ -263,7 +264,7 @@ class PortfolioCard extends Component{
     return(
       <div style={cardStyle} 
       className={this.props.filter[this.props.element.tag] ? this.props.element.tag: null}>
-        <img style={imgStyle} width='155px' src={this.handleImgSrc()} alt='img'/>
+        <img style={imgStyle} width={cardStyle.width} src={this.handleImgSrc()} alt='img'/>
         <h3 style={{paddingLeft: "3px"}}>{this.props.element.title}</h3>
         <p style={{paddingLeft: "3px"}}>{this.props.element.desc}</p>
         <div className={linkClass}>{this.handleLinks(linkData)}</div>
@@ -311,7 +312,6 @@ class Gallery extends Component {
       const quadCardSmall = singleUnitWidthSmall * 4 + minLeftPadSmall;
       const pentaCardSmall = singleUnitWidthSmall * 5 + minLeftPadSmall;
 
-      const doubleCardLarge = singleUnitWidthLarge * 2 + minLeftPadLarge;
       const tripleCardLarge = singleUnitWidthLarge * 3 + minLeftPadLarge;
       const quadCardLarge = singleUnitWidthLarge * 4 + minLeftPadLarge;
       // Change calculation to be dynamic.
@@ -362,8 +362,8 @@ class Gallery extends Component {
            return (
                 <li className={currentState[element.tag] ?
                               'no-padding' :
-                               console.log(smallOrLargeClass(element.tagPaddingClass, width))}>
-                    <PortfolioCard element={element} filter={currentState} />
+                               smallOrLargeClass(element.tagPaddingClass, width)}>
+                    <PortfolioCard element={element} filter={currentState} width={width} />
                 </li>
             );
         });

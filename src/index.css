@@ -127,7 +127,7 @@ code {
 	text-align: center;
 }
 
-/* 5 FOR MOBILE 10 FOR PC */
+/* 5 FOR MOBILE (sm) 10 FOR PC (lg) */
 
 .project-padding{
 	padding: 5px 5px 5px 5px;
@@ -135,6 +135,14 @@ code {
 
 .blog-padding{
 	padding: 5px 5px 5px 5px;
+}
+
+.project-padding-lg{
+	padding: 10px 10px 10px 10px;
+}
+
+.blog-padding-lg{
+	padding: 10px 10px 10px 10px;
 }
 
 .no-padding{

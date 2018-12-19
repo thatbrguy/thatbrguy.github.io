@@ -198,12 +198,16 @@ class PortfolioCard extends Component{
     let text = linkData.text;
     let count = linkData.count;
     let htmlLinks =  [];
+    let linkStyle = {
+      display: 'inline',
+    }
+    // 850 is four card threshold
 
     if(count > 0)
     {
     for(let i=0; i < links.length; i++)
       htmlLinks.push(
-        <div>
+        <div style={this.props.width > 850 ? linkStyle : {}}>
           [<a href={links[i].trim()} 
               target='_blank' 
               rel="noopener noreferrer">{text[i].trim()}</a>]
@@ -282,8 +286,7 @@ class Gallery extends Component {
           active: {
             blog: false,
             project: false
-          },
-          collapse: this.props.linkStates
+          }
         };
         this.toggleClass = this.toggleClass.bind(this);
       
@@ -551,14 +554,6 @@ class App extends Component {
     window.removeEventListener('resize', this.updateWidth);
   }
 
-  getLinkCollapseState() {
-    let linkStates = {};
-    for(let i=0; i < portfolioData.portfolio.length; i++){
-      linkStates['element' + i] = false;
-    }
-    return linkStates;
-  }
-
   render() {
     return (
       <div>
@@ -575,7 +570,7 @@ class App extends Component {
           <SectionBreak section={'Portfolio'} />
        </Element>
        <div>
-          <Gallery elements={portfolioData.portfolio} width={this.state.width} linkStates={this.getLinkCollapseState()} />
+          <Gallery elements={portfolioData.portfolio} width={this.state.width} />
        </div>
        <Element name='exp'>
           <SectionBreak section={'Experience'} />

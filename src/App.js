@@ -225,18 +225,15 @@ class PortfolioCard extends Component{
   }
 
   padBottomLinks(count) {
-    if(count === 3)
-      return "65px"
-    else if(count === 2)
-      return "45px"
-    else if(count === 1)
-      return "25px"
+    // Adds additional 20px padding for each link.
+    return (25 + 20 * (count - 1)) + 'px'
   }
 
   render() {
 
     let linkData = this.extractLinks();
 
+    // 850 is four card small threshold.
     let cardStyle = {
       width: this.props.width > 850 ? "277px" : "160px",
       height: "auto",
@@ -349,7 +346,7 @@ class Gallery extends Component {
     }
 
     render() {
-      
+
         let childElements = [];
         let elements = this.props.elements;
         let currentState = this.state.active;

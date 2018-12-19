@@ -171,12 +171,21 @@ code {
 	padding: 0px;
 }
 
-.link-style {
+/* bottom = 12 for mobile! */
+.link-style-sm {
 	text-align: right;
-	bottom: 20px;
-	right: 17px;
+	bottom: 14px;
+	right: 15px;
 	position: absolute;
 }
+
+.link-style-lg {
+	text-align: right;
+	bottom: 17px;
+	right: 19px;
+	position: absolute;
+}
+
 
 .blog-style a{
 	color: red;

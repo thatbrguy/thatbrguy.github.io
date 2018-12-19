@@ -198,21 +198,35 @@ class PortfolioCard extends Component{
     let text = linkData.text;
     let count = linkData.count;
     let htmlLinks =  [];
-    let linkStyle = {
-      display: 'inline',
-    }
     // 850 is four card threshold
 
     if(count > 0)
     {
-    for(let i=0; i < links.length; i++)
+    for(let i=0; i < links.length; i++){
+
+      let content = text[i].trim();
+      let iconClass;
+
+      if(content === 'Arxiv')
+        iconClass = "fas fa-file-pdf"
+      else if(content === 'Demo')
+        iconClass = "fab fa-youtube"
+      else if(content === 'Medium')
+        iconClass = "fab fa-medium"
+      else if(content === 'GitHub')
+        iconClass = "fab fa-github"
+      else
+        iconClass = "fas fa-globe-americas"
+
       htmlLinks.push(
-        <div style={this.props.width > 850 ? linkStyle : {}}>
-          [<a href={links[i].trim()} 
+        <span>
+          <a href={links[i].trim()} 
               target='_blank' 
-              rel="noopener noreferrer">{text[i].trim()}</a>]
-        </div>); 
-    
+              rel="noopener noreferrer">
+            <i style={{fontSize: '20px', paddingLeft:"5px"}} className={iconClass}></i>
+          </a>
+        </span>); 
+    }
       return <div>{htmlLinks}</div>
     }
     else
@@ -228,11 +242,6 @@ class PortfolioCard extends Component{
     return src;
   }
 
-  padBottomLinks(count) {
-    // Adds additional 20px padding for each link.
-    return (25 + 20 * (count - 1)) + 'px'
-  }
-
   render() {
 
     let linkData = this.extractLinks();
@@ -246,7 +255,7 @@ class PortfolioCard extends Component{
       borderRadius: "10px",
       color: "black",
       textAlign: "left",
-      paddingBottom: this.padBottomLinks(linkData.count)
+      paddingBottom: '35px'
     }
 
     let imgStyle = {
@@ -257,8 +266,8 @@ class PortfolioCard extends Component{
 
     // If you ever modify color, please do change it in the stylesheet
     // for links as well.
-    console.log(this.props.width);
-    let linkClass = 'link-style ' + this.props.element.tag + '-style';
+    let linkStyle = this.props.width > 850 ? "link-style-lg " : "link-style-sm "
+    let linkClass = linkStyle + this.props.element.tag + '-style';
     //const src = 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Logo_CODE.svg/2000px-Logo_CODE.svg.png'
     //const src = 'https://cdn-images-1.medium.com/max/1116/1*dUiiquKeRQFRhZ82ix4ICw.jpeg'
 

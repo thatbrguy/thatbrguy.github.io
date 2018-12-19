@@ -326,6 +326,7 @@ class Gallery extends Component {
     render() {
         let currentState = this.state.active;
         //We need two states. Check based on state.
+        // +lg, +sm to paddingclass based on width
         const childElements = this.props.elements.map(function(element){
            return (
                 <li className={currentState[element.tag] ? 'no-padding' : element.tagPaddingClass}>

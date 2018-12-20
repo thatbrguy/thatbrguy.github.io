@@ -53,6 +53,11 @@ class NavbarBR extends Component {
                 Experience
               </Link>
             </NavItem>
+            <NavItem eventKey={4}>
+              <Link to="contact" smooth={true} offset={-50} className='navlink'>
+                Contact
+              </Link>
+            </NavItem>
           </Nav>
         </Navbar.Collapse>
       </Navbar>
@@ -73,35 +78,56 @@ class About extends Component {
         </div>
 
         <div className="col-lg-7 col-md-7 col-sm-7 col-xs-12 about-me-text">
-          <h1>Meet Bharath.</h1>
-          <p>Bharath Raj is currently an undergrad at SSN College of Engineering. 
-             Bharath Raj is currently an undergrad at SSN College of Engineering. 
-             Bharath Raj is currently an undergrad at SSN College of Engineering. 
-             Bharath Raj is currently an undergrad at SSN College of Engineering. 
-             Bharath Raj is currently an undergrad at SSN College of Engineering. 
-             Bharath Raj is currently an undergrad at SSN College of Engineering. 
-             Bharath Raj is currently an undergrad at SSN College of Engineering. </p>
-          <p>Bharath Raj is currently an undergrad at SSN College of Engineering. 
-             Bharath Raj is currently an undergrad at SSN College of Engineering. 
-             Bharath Raj is currently an undergrad at SSN College of Engineering. 
-             Bharath Raj is currently an undergrad at SSN College of Engineering. 
-             Bharath Raj is currently an undergrad at SSN College of Engineering. 
-             Bharath Raj is currently an undergrad at SSN College of Engineering. 
-             Bharath Raj is currently an undergrad at SSN College of Engineering. </p>  
-          <p>Bharath Raj is currently an undergrad at SSN College of Engineering. 
-             Bharath Raj is currently an undergrad at SSN College of Engineering. 
-             Bharath Raj is currently an undergrad at SSN College of Engineering. 
-             Bharath Raj is currently an undergrad at SSN College of Engineering. 
-             Bharath Raj is currently an undergrad at SSN College of Engineering. 
-             Bharath Raj is currently an undergrad at SSN College of Engineering. 
-             Bharath Raj is currently an undergrad at SSN College of Engineering. </p> 
-          <p>Bharath Raj is currently an undergrad at SSN College of Engineering. 
-             Bharath Raj is currently an undergrad at SSN College of Engineering. 
-             Bharath Raj is currently an undergrad at SSN College of Engineering. 
-             Bharath Raj is currently an undergrad at SSN College of Engineering. 
-             Bharath Raj is currently an undergrad at SSN College of Engineering. 
-             Bharath Raj is currently an undergrad at SSN College of Engineering. 
-             Bharath Raj is currently an undergrad at SSN College of Engineering. </p> 
+          <h1>Let's build something great.</h1>
+          <p>Hello. I'm Bharath Raj, an undergraduate student set to graduate at 2019. I actively 
+             work on research in the fields of computer vision, machine learning and artificial 
+             intelligence. I often work on interesting hobby projects and maintain a technical blog 
+             on Medium.</p>
+          <p>I am always on the lookout for opportunities to learn more and work on exciting projects 
+             in my fields of interest. Scroll down to take a look at my projects, publications and blogs.</p>
+
+          <div align = "center">
+          <div className = "resume-pad">
+            <button className="btn btn-danger">Download Resume</button>
+          </div>
+            <hr style={{borderColor:'black', 'borderWidth': '3px'}} />
+          
+            <div className = "icons">
+              <a href="https://www.facebook.com/ThatBRGuy" 
+                 target="_blank"
+                 rel="noopener noreferrer">
+                <i className="fab fa-facebook-square icon-item"></i>
+              </a>
+              <a href="https://github.com/thatbrguy" 
+                 target="_blank"
+                 rel="noopener noreferrer">
+                <i className="fab fa-github-square icon-item"></i>
+              </a>
+              <a href="https://medium.com/@thatbrguy" 
+                 target="_blank"
+                 rel="noopener noreferrer">
+                <i className="fab fa-medium icon-item"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/bharathrajn/" 
+                 target="_blank"
+                 rel="noopener noreferrer">
+                <i className="fab fa-linkedin icon-item"></i>
+              </a>
+              <a href="mailto:bharathrajn98@gmail.com" 
+                 target="_blank"
+                 rel="noopener noreferrer">
+                <i className="fas fa-envelope-square icon-item"></i>
+              </a>
+            </div>
+            <div id="iconlink" className = "icons">
+              <Link to="portfolio" smooth={true} offset={-50} className='navlink'>
+                <button style={{background: 'transparent', border: 'none'}} className="fas fa-chevron-down">
+                </button>
+              </Link>
+            </div>
+          
+          </div>
+        
         </div>
 
       </div>
@@ -392,17 +418,13 @@ class Gallery extends Component {
 
 class SectionBreak extends Component {
   render(){
-    const sectionBreakStyle = {
-      background: "#fff",
-      height: "100px",
-      textAlign: "center"
-    }
-    const textStyle = {
-      paddingTop: "29px"
-    }
+    let divClass = 'section-break-' + this.props.section.toLowerCase()
+    let borderClass = 'section-break-border-' + this.props.section.toLowerCase()
+    let textClass = 'section-break-text-' + this.props.section.toLowerCase()
     return(
-      <div style={sectionBreakStyle}>
-        <h1 style={textStyle}>{this.props.section}</h1>
+      <div className={divClass}>
+        <h1 className={textClass}>{this.props.section}</h1>
+        <hr width='90%' className={borderClass} />
       </div>
     )
   }
@@ -509,6 +531,17 @@ class ExpSkillsGird extends Component {
   }
 }
 
+class Contact extends Component {
+  render(){
+    return(
+
+    <div className="contact">
+      <h1>Let's connect. I would love to discuss</h1>
+    </div>
+
+    )
+  }
+}
 
 class App extends Component {
 
@@ -585,6 +618,9 @@ class App extends Component {
           <SectionBreak section={'Experience'} />
        </Element>
        <ExpSkillsGird style={{background: "#333"}}/>
+       <Element name='contact'>
+          <Contact />
+       </Element>
       </div>
     );
   }

@@ -24,6 +24,62 @@ code {
 	display: inline-block;
 }
 
+/* Contact START */
+
+.contact{
+	background: white;
+	color: black;
+	text-align: center;
+	padding-bottom: 20px;
+	padding-top: 5px; 
+	margin-top: 0px;
+	margin-bottom: -20px;
+}
+
+/* Contact END */
+
+/* Section Break START */
+
+.section-break-portfolio{
+	background: black;
+	height: 100px;
+	text-align: center;
+	padding-top: 0px;
+	margin-top: -20px;
+}
+
+.section-break-text-portfolio{
+	padding-top: 29px;
+	color: white;
+}
+
+.section-break-border-portfolio{
+	border-color: white;
+	border-width: 3px; 
+	margin-left: 5%;
+}
+
+.section-break-experience{
+	background: white;
+	height: 100px;
+	text-align: center;
+	padding-top: 0px;
+	margin-top: -20px;
+}
+
+.section-break-text-experience{
+	padding-top: 29px;
+	color: black;
+}
+
+.section-break-border-experience{
+	border-color: black;
+	border-width: 3px; 
+	margin-left: 5%;
+}
+
+/* Section Break END */
+
 /* Skills START */
 
 .icon-bg-style{
@@ -53,6 +109,26 @@ code {
 
 /* About START */
 
+.resume-pad{
+	padding-left: 12px;
+}
+
+.icon-item{
+	padding-left: 3px;
+}
+
+.icons {
+	font-size: 27px;
+}
+
+.icons a{
+	color: black;
+}
+
+.icons a:hover{
+	color: red;
+	transition: 0.5s;
+}
 
 .about{
 	color: black;
@@ -191,9 +267,18 @@ code {
 	color: red;
 }
 
+.blog-style a:hover{
+	color: black;
+}
+
 .project-style a{
 	color: blue;
 }
+
+.project-style a:hover{
+	color: black;
+}
+
 
 /* Portfolio Style END */
 

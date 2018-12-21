@@ -159,8 +159,8 @@ class ExperienceCard extends Component{
 
       <div className="timeline-element right">
         <div className="timeline-content">
-          <h2>{this.props.data.title}</h2>
-          <h4>{this.props.data.role}</h4>
+          <h2>{this.props.data.role}</h2>
+          <h4>{this.props.data.title}</h4>
           <h6>{this.props.data.duration}</h6>
           <p>{this.props.data.desc}</p>
         </div>
@@ -453,9 +453,9 @@ class SkillsIcon extends Component {
           <i className={this.props.skills.iconClass}></i>
         </div>
         <div className="skills-text">
-          <p>{this.props.skills.skillText}</p>
+          <p><b>{this.props.skills.skillText}</b></p>
         </div>
-        <div>
+        <div style={{paddingLeft: '62px', marginTop: '-20px'}}>
           <p>{this.props.skills.desc}</p>
         </div>
       </div>
@@ -469,24 +469,28 @@ class Skills extends Component {
     let htmlList = []
     let acheivementList = [
     {
-      'acheivement': "People's Choice Award - Yet Another Hackathon",
+      'title': "People's Choice Award",
+      'place': "Yet Another Hackathon",
       'date': 'August 2018',
-      'desc': 'yeayyyyyyyyyy'
+      'desc': 'Built a module using Raspberry Pi and Machine Learning to predict assault on a person.'
     },
     {
-      'acheivement': 'Runner Up - Data Science Challenge',
+      'title': 'Runner Up',
+      'place': 'Data Science Challenge',
       'date': 'April 2018',
-      'desc': 'yeayyyyyyyyyy'
+      'desc': '10 day kaggle contest involving a highly skewed dataset.'
     },
     {
-      'acheivement': 'Runner Up - AWS Deep Learning Hackathon',
+      'title': 'Runner Up',
+      'place': 'AWS Deep Learning Hackathon',
       'date': 'January 2018',
-      'desc': 'yeayyyyyyyyyy'
+      'desc': "Built an object detection system for self driving cars to understand traffic policemen's signs."
     },
     {
-      'acheivement': 'First Place - Project Display',
+      'title': 'First Place',
+      'place':'Project Display',
       'date': 'August 2017',
-      'desc': 'yeayyyyyyyyyy'
+      'desc': "Presented a CNN that can break my university portal's captcha "
     },
     ]
 
@@ -495,7 +499,7 @@ class Skills extends Component {
       let data = acheivementList[i];
       htmlList.push(
         <li>
-          <h4>{data.acheivement}</h4>
+          <h4>{data.title} | <i>{data.place}</i></h4>
           <h6>{data.date}</h6>
           <p>{data.desc}</p>
         </li>
@@ -504,7 +508,7 @@ class Skills extends Component {
 
     return(
       <div>
-        <ul>
+        <ul style={{paddingLeft: '5px'}}>
           {htmlList}
         </ul>
       </div>

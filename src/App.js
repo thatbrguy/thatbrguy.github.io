@@ -32,21 +32,7 @@ class NavbarBR extends Component {
   }
 
   render() {
-    /*
-    let navStyle = {
-      minHeight:this.props.styleProps.height,
-      transition:"0.4s"
-    }
-    if(this.props.styleProps.background !== null)
-      navStyle['background'] = this.props.styleProps.background
-    if(this.props.styleProps.borderColor !== null)
-      navStyle['borderColor'] = this.props.styleProps.background
-    const brandStyle = {
-      paddingTop:this.props.styleProps.paddingTop,
-      fontSize:this.props.styleProps.fontSize,
-      transition:"0.4s"
-    }
-    */
+
     return(
 
        <Navbar inverse 
@@ -510,7 +496,7 @@ class Skills extends Component {
       'title': 'Runner Up',
       'place': 'AWS Deep Learning Hackathon',
       'date': 'January 2018',
-      'desc': "Built an object detection system for self driving cars to understand traffic policemen's signs."
+      'desc': "Built an object detection system to understand hand signs of traffic policemen."
     },
     {
       'title': 'First Place',
@@ -525,8 +511,8 @@ class Skills extends Component {
       let data = acheivementList[i];
       htmlList.push(
         <li>
-          <h4>{data.title} | <i>{data.place}</i></h4>
-          <h6>{data.date}</h6>
+          <h4><b>{data.title}</b> | <i>{data.place}</i></h4>
+          <h6 style={{marginTop: '-5px'}}>{data.date}</h6>
           <p>{data.desc}</p>
         </li>
       );

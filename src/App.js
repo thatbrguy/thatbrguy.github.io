@@ -65,6 +65,40 @@ class NavbarBR extends Component {
   }
 }
 
+class ContactIcons extends Component {
+  render() {
+    return(
+      <div className = {this.props.iconClass}>
+        <a href="https://www.facebook.com/ThatBRGuy" 
+           target="_blank"
+           rel="noopener noreferrer">
+          <i className="fab fa-facebook-square icon-item"></i>
+        </a>
+        <a href="https://github.com/thatbrguy" 
+           target="_blank"
+           rel="noopener noreferrer">
+          <i className="fab fa-github-square icon-item"></i>
+        </a>
+        <a href="https://medium.com/@thatbrguy" 
+           target="_blank"
+           rel="noopener noreferrer">
+          <i className="fab fa-medium icon-item"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/bharathrajn/" 
+           target="_blank"
+           rel="noopener noreferrer">
+          <i className="fab fa-linkedin icon-item"></i>
+        </a>
+        <a href="mailto:bharathrajn98@gmail.com" 
+           target="_blank"
+           rel="noopener noreferrer">
+          <i className="fas fa-envelope-square icon-item"></i>
+        </a>
+      </div>
+    )
+  }
+}
+
 class About extends Component {
   render(){
     return(
@@ -91,35 +125,10 @@ class About extends Component {
             <button className="btn btn-danger">Download Resume</button>
           </div>
             <hr style={{borderColor:'black', 'borderWidth': '3px'}} />
-          
+            
+            <ContactIcons iconClass={'icons'} />
+
             <div className = "icons">
-              <a href="https://www.facebook.com/ThatBRGuy" 
-                 target="_blank"
-                 rel="noopener noreferrer">
-                <i className="fab fa-facebook-square icon-item"></i>
-              </a>
-              <a href="https://github.com/thatbrguy" 
-                 target="_blank"
-                 rel="noopener noreferrer">
-                <i className="fab fa-github-square icon-item"></i>
-              </a>
-              <a href="https://medium.com/@thatbrguy" 
-                 target="_blank"
-                 rel="noopener noreferrer">
-                <i className="fab fa-medium icon-item"></i>
-              </a>
-              <a href="https://www.linkedin.com/in/bharathrajn/" 
-                 target="_blank"
-                 rel="noopener noreferrer">
-                <i className="fab fa-linkedin icon-item"></i>
-              </a>
-              <a href="mailto:bharathrajn98@gmail.com" 
-                 target="_blank"
-                 rel="noopener noreferrer">
-                <i className="fas fa-envelope-square icon-item"></i>
-              </a>
-            </div>
-            <div id="iconlink" className = "icons">
               <Link to="portfolio" smooth={true} offset={-50} className='navlink'>
                 <button style={{background: 'transparent', border: 'none'}} className="fas fa-chevron-down">
                 </button>
@@ -435,13 +444,13 @@ class SkillsIcon extends Component {
     return(
       <div>
         <div className="icon-bg-style">
-          <i className={this.props.iconClass}></i>
+          <i className={this.props.skills.iconClass}></i>
         </div>
         <div className="skills-text">
-          <p>{this.props.skillText}</p>
+          <p>{this.props.skills.skillText}</p>
         </div>
         <div>
-          <p>Nice, Nice, Nice, Nice, Nice, Nice, Nice, Nice, Nice, Nice</p>
+          <p>{this.props.skills.desc}</p>
         </div>
       </div>
     )
@@ -497,15 +506,32 @@ class Skills extends Component {
   }
 
   render() {
+    const skillList = [
+    {
+      'iconClass': "fas fa-code icon-style-code",
+      'skillText': "Code",
+      'desc': 'Python, C, C++, JavaScript, MATLAB, Bash'
+    },
+    {
+      'iconClass': "fab fa-react icon-style-dev",
+      'skillText': "Development",
+      'desc': 'React, Django, AWS, GCP, Git, GIMP'
+    },
+    {
+      'iconClass': "fas fa-fire icon-style-fw",
+      'skillText': "Frameworks",
+      'desc': 'TensorFlow, PyTorch, Keras, Scikit'
+    }
+    ]
     return(
-      <div style={{color:"white"}}>
+      <div style={{color:"black"}}>
           <h2>Acheivements</h2>
           {this.acheivements()}
           <h2>Skills</h2>
           <div>
-            <SkillsIcon iconClass="fas fa-code icon-style" skillText="Code" />
-            <SkillsIcon iconClass="fab fa-react icon-style" skillText="Development" />
-            <SkillsIcon iconClass="fas fa-fire icon-style" skillText="Frameworks" />
+            <SkillsIcon skills={skillList[0]} />
+            <SkillsIcon skills={skillList[1]} />
+            <SkillsIcon skills={skillList[2]} />
           </div>  
       </div>
     )
@@ -535,9 +561,25 @@ class Contact extends Component {
   render(){
     return(
 
-    <div className="contact">
-      <h1>Let's connect. I would love to discuss</h1>
-    </div>
+      <div className='contact'>
+        <ContactIcons iconClass={'contact-icons'}/>
+        <div className = "contact-link">
+          <Link to="home" smooth={true} offset={-50}>
+            <button style={{background: 'transparent', border: 'none'}} 
+                    className="fas fa-chevron-up">
+            </button>
+          </Link>
+        </div>
+        <hr width='90%' className={'section-break-border-portfolio'} />
+        <div>
+          <p style={{'margin':'0', 'padding':'0 0 0 5px'}}>
+            Bharath Raj &copy; {this.props.year}
+          </p>
+          <p style={{'margin':'0', 'padding':'0 0 0 5px'}}>
+            Built using React. Fork my website here. 
+          </p>
+        </div>
+      </div>
 
     )
   }
@@ -552,7 +594,8 @@ class App extends Component {
       navbarClass: window.innerWidth > 800? "navbar-trans-lg" : "navbar-trans-xs",
       navbrandClass: window.innerWidth > 800? "navbrand-font-lg" : "navbrand-font-xs",
       navrightClass: window.innerWidth > 800? "navbar-right-lg" : "navbar-right-xs",
-      width:window.innerWidth
+      width:window.innerWidth,
+      year:new Date().getFullYear(),
     };
     this.updateHeight = this.updateHeight.bind(this);
     this.updateWidth = this.updateWidth.bind(this);
@@ -617,9 +660,11 @@ class App extends Component {
        <Element name='exp'>
           <SectionBreak section={'Experience'} />
        </Element>
-       <ExpSkillsGird style={{background: "#333"}}/>
+       <div style={{background: 'white'}}>
+          <ExpSkillsGird />
+       </div>
        <Element name='contact'>
-          <Contact />
+          <Contact year={this.state.year}/>
        </Element>
       </div>
     );

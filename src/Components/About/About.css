@@ -1,0 +1,26 @@
+.resume-pad{
+	padding-left: 12px;
+}
+
+.icon-item{
+	padding-left: 3px;
+}
+
+.icons {
+	font-size: 27px;
+}
+
+.icons a{
+	color: black;
+}
+
+.icons a:hover{
+	color: red;
+	transition: 0.5s;
+}
+
+.about{
+	color: black;
+	text-align: left;
+	padding: 20px 0px 20px 0;
+}

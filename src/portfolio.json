@@ -2,123 +2,123 @@
     "portfolio": [
         {
             "title": "Pedestrian Detection on Multiple GPUs",
+            "desc": "Using the TensorFlow Object Detection API on multiple GPUs using the Python multiprocessing library",
+            "linkArray": ";https://www.youtube.com/watch?v=0hWW6FVcFAo;; https://github.com/thatbrguy/Pedestrian-Detection;; https://medium.com/nanonets/how-to-automate-surveillance-easily-with-deep-learning-4eb4fa0cd68d;",
+            "tag": "blog",
             "color": "red",
             "src": "/portfolio/ped.jpeg",
-            "linkTextArray": ";Demo;; GitHub;; Medium;",
-            "linkArray": ";https://www.youtube.com/watch?v=0hWW6FVcFAo;; https://github.com/thatbrguy/Pedestrian-Detection;; https://medium.com/nanonets/how-to-automate-surveillance-easily-with-deep-learning-4eb4fa0cd68d;",
             "tagPaddingClass": "blog-padding",
-            "tag": "blog",
-            "desc": "Using the TensorFlow Object Detection API on multiple GPUs using the Python multiprocessing library"
+            "linkTextArray": ";Demo;; GitHub;; Medium;"
         },
         {
             "title": "Dehaze GAN",
+            "desc": "A modified Conditional GAN that can Dehaze images",
+            "linkArray": ";http://arxiv.org/abs/1810.09479;; https://www.youtube.com/watch?v=ioSL6ese46A;; https://github.com/thatbrguy/Dehaze-GAN;",
+            "tag": "project",
             "color": "blue",
             "src": "/portfolio/fog.png",
-            "linkTextArray": ";Arxiv;; Demo;; GitHub;",
-            "linkArray": ";http://arxiv.org/abs/1810.09479;; https://www.youtube.com/watch?v=ioSL6ese46A;; https://github.com/thatbrguy/Dehaze-GAN;",
             "tagPaddingClass": "project-padding",
-            "tag": "project",
-            "desc": "A modified Conditional GAN that can Dehaze images"
+            "linkTextArray": ";Arxiv;; Demo;; GitHub;"
         },
         {
             "title": "Simple Guide to the Versions of the Inception Network",
+            "desc": "A comprehensive overview about the popular versions of the Inception Network",
+            "linkArray": "https://towardsdatascience.com/a-simple-guide-to-the-versions-of-the-inception-network-7fc52b863202",
+            "tag": "blog",
             "color": "red",
             "src": "/portfolio/incep.png",
-            "linkTextArray": "Medium",
-            "linkArray": "https://towardsdatascience.com/a-simple-guide-to-the-versions-of-the-inception-network-7fc52b863202",
             "tagPaddingClass": "blog-padding",
-            "tag": "blog",
-            "desc": "A comprehensive overview about the popular versions of the Inception Network"
+            "linkTextArray": "Medium"
         },
         {
             "title": "Deep Learning on the Edge",
+            "desc": "An overview of performing Deep Learning on mobile and edge devices",
+            "linkArray": "https://towardsdatascience.com/deep-learning-on-the-edge-9181693f466c",
+            "tag": "blog",
             "color": "red",
             "src": "/portfolio/edge.jpeg",
-            "linkTextArray": "Medium",
-            "linkArray": "https://towardsdatascience.com/deep-learning-on-the-edge-9181693f466c",
             "tagPaddingClass": "blog-padding",
-            "tag": "blog",
-            "desc": "An overview of performing Deep Learning on mobile and edge devices"
+            "linkTextArray": "Medium"
         },
         {
-            "title": "HyperSpectral Image Segmentation",
+            "title": "Hyper Spectral Image Segmentation",
+            "desc": "Semantic Segmentation of HyperSpectral Images using a Depthwise Separable U-Net",
+            "linkArray": "https://github.com/thatbrguy/Hyperspectral-Image-Segmentation",
+            "tag": "project",
             "color": "blue",
             "src": "/portfolio/hyper.png",
-            "linkTextArray": "GitHub",
-            "linkArray": "https://github.com/thatbrguy/Hyperspectral-Image-Segmentation",
             "tagPaddingClass": "project-padding",
-            "tag": "project",
-            "desc": "Semantic Segmentation of HyperSpectral Images using a Depthwise Separable U-Net"
+            "linkTextArray": "GitHub"
         },
         {
             "title": "Ball Tracking Bot",
-            "color": "blue",
-            "src": "https://raw.githubusercontent.com/thatbrguy/Ball-Tracking-Bot/master/test.gif",
-            "linkTextArray": "GitHub",
+            "desc": "Python script that can track a ball in 3D ",
             "linkArray": "https://github.com/thatbrguy/Ball-Tracking-Bot",
-            "tagPaddingClass": "project-padding",
             "tag": "project",
-            "desc": "Python script that can track a ball in 3D "
+            "color": "blue",
+            "src": "/portfolio/ball.jpg",
+            "tagPaddingClass": "project-padding",
+            "linkTextArray": "GitHub"
         },
         {
             "title": "How to fit Large Neural Networks on the Edge",
+            "desc": "Exploring techniques used to fit neural networks in memory-constrained edge settings",
+            "linkArray": "https://heartbeat.fritz.ai/how-to-fit-large-neural-networks-on-the-edge-eb621cdbb33",
+            "tag": "blog",
             "color": "red",
             "src": "/portfolio/fit.jpeg",
-            "linkTextArray": "Medium",
-            "linkArray": "https://heartbeat.fritz.ai/how-to-fit-large-neural-networks-on-the-edge-eb621cdbb33",
             "tagPaddingClass": "blog-padding",
-            "tag": "blog",
-            "desc": "Exploring techniques used to fit neural networks in memory-constrained edge settings"
+            "linkTextArray": "Medium"
         },
         {
             "title": "Fabrik",
+            "desc": "Fabrik is a web-app where you can collaboratively design neural networks on a GUI and export it to popular ML frameworks.",
+            "linkArray": "https://github.com/Cloud-CV/Fabrik",
+            "tag": "project",
             "color": "blue",
             "src": "/portfolio/fabrik.jpeg",
-            "linkTextArray": "GitHub",
-            "linkArray": "https://github.com/Cloud-CV/Fabrik",
             "tagPaddingClass": "project-padding",
-            "tag": "project",
-            "desc": "Fabrik is a web-app where you can collaboratively design neural networks on a GUI and export it to popular ML frameworks."
+            "linkTextArray": "GitHub"
         },
         {
             "title": "Advances in GANs",
+            "desc": " A blog post listing out the progress in the field of GANs",
+            "linkArray": "https://www.beyondminds.net/blog/advances-in-generative-adversarial-networks",
+            "tag": "blog",
             "color": "red",
             "src": "/portfolio/GAN.jpeg",
-            "linkTextArray": "BeyondMindsBlog",
-            "linkArray": "https://www.beyondminds.net/blog/advances-in-generative-adversarial-networks",
             "tagPaddingClass": "blog-padding",
-            "tag": "blog",
-            "desc": " A blog post listing out the progress in the field of GANs"
+            "linkTextArray": "BeyondMindsBlog"
         },
         {
             "title": "Playing Quidditch using TensorFlow",
+            "desc": "Tutorial on how to use the TensorFlow Object Detection API",
+            "linkArray": ";https://www.youtube.com/watch?v=j0cjLNnLNYA;; https://github.com/thatbrguy/Object-Detection-Quidditch;; https://medium.freecodecamp.org/how-to-play-quidditch-using-the-tensorflow-object-detection-api-b0742b99065d;",
+            "tag": "blog",
             "color": "red",
             "src": "/portfolio/quid.jpeg",
-            "linkTextArray": ";Demo;; GitHub;; Medium;",
-            "linkArray": ";https://www.youtube.com/watch?v=j0cjLNnLNYA;; https://github.com/thatbrguy/Object-Detection-Quidditch;; https://medium.freecodecamp.org/how-to-play-quidditch-using-the-tensorflow-object-detection-api-b0742b99065d;",
             "tagPaddingClass": "blog-padding",
-            "tag": "blog",
-            "desc": "Tutorial on how to use the TensorFlow Object Detection API"
+            "linkTextArray": ";Demo;; GitHub;; Medium;"
         },
         {
             "title": "Tech Club SSN",
+            "desc": "Created Jupyter Notebooks on introductory Machine Learning concepts and a website for TechClubSSN",
+            "linkArray": ";https://github.com/Tech-Club-SSN;; http://bit.ly/techclubsite;",
+            "tag": "project",
             "color": "blue",
             "src": "/portfolio/tech_club_noalpha.jpeg",
-            "linkTextArray": ";GitHub;; Website;",
-            "linkArray": ";https://github.com/Tech-Club-SSN;; http://bit.ly/techclubsite;",
             "tagPaddingClass": "project-padding",
-            "tag": "project",
-            "desc": "Created Jupyter Notebooks on introductory Machine Learning concepts and a website for TechClubSSN"
+            "linkTextArray": ";GitHub;; Website;"
         },
         {
             "title": "Uploading large files to Google Colab and remote Jupyter notebooks",
+            "desc": "Tutorial on uploading and downloading large files to and from remote python notebooks",
+            "linkArray": "https://medium.freecodecamp.org/how-to-transfer-large-files-to-google-colab-and-remote-jupyter-notebooks-26ca252892fa",
+            "tag": "blog",
             "color": "red",
             "src": "/portfolio/colab.jpeg",
-            "linkTextArray": "Medium",
-            "linkArray": "https://medium.freecodecamp.org/how-to-transfer-large-files-to-google-colab-and-remote-jupyter-notebooks-26ca252892fa",
             "tagPaddingClass": "blog-padding",
-            "tag": "blog",
-            "desc": "Tutorial on uploading and downloading large files to and from remote python notebooks"
+            "linkTextArray": "Medium"
         }
     ]
 }

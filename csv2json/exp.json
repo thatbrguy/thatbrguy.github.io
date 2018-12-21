@@ -1,34 +1,34 @@
 {
     "exp": [
         {
-            "title": "Orbuculum",
-            "role": "Data Science R&D",
             "duration": "Aug 2018 to Present",
-            "desc": "Researching and experimenting on novel methods of interpreting Machine Learning Classifiers"
-        },
-        {
-            "title": "CloudCV",
-            "role": "Google Code-In Mentor",
-            "duration": "Oct 2018 to Dec 2018",
-            "desc": "GCI mentor for the project Fabrik under the CloudCV organisation"
-        },
-        {
+            "desc": "Researching and experimenting on novel methods of interpreting Machine Learning Classifiers",
             "title": "Orbuculum",
-            "role": "Data Science Intern",
+            "role": "Data Science R&D"
+        },
+        {
+            "duration": "Oct 2018 to Dec 2018",
+            "desc": "GCI mentor for the project Fabrik under the CloudCV organisation",
+            "title": "CloudCV",
+            "role": "Google Code-In Mentor"
+        },
+        {
             "duration": "Jan 2018 to April 2018",
-            "desc": "Used neural networks to find salient information in genetic data"
+            "desc": "Used neural networks to find salient information in genetic data",
+            "title": "Orbuculum",
+            "role": "Data Science Intern"
         },
         {
+            "duration": "September 2018",
+            "desc": "Organized AI4Good Hackathon as a part of Tech Club SSN",
             "title": "AI4Good Hackathon",
-            "role": "Event Head",
-            "duration": "September 2018",
-            "desc": "Organized AI4Good Hackathon as a part of Tech Club SSN"
+            "role": "Event Head"
         },
         {
-            "title": "SSN MUN 2018",
-            "role": "Under Seceretary General",
             "duration": "September 2018",
-            "desc": "Head of Logistics for SSNMUN 2018"
+            "desc": "Head of Logistics for SSNMUN 2018",
+            "title": "SSN MUN 2018",
+            "role": "Under Seceretary General"
         }
     ]
 }

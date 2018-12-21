@@ -1,0 +1,78 @@
+.filter-button-style{
+	padding-top: 20px;
+	padding-bottom: -10px;
+	text-align: center;
+}
+
+.project-padding-sm{
+	padding: 5px 5px 5px 5px;
+}
+
+.blog-padding-sm{
+	padding: 5px 5px 5px 5px;
+}
+
+.project-padding-lg{
+	padding: 10px 10px 10px 10px;
+}
+
+.blog-padding-lg{
+	padding: 10px 10px 10px 10px;
+}
+
+.no-padding{
+	padding-top: 0px;
+	padding-left: 0px;
+	padding-right: 1px;
+	padding-bottom: 0px;
+}
+
+.portfolio-style{
+	background: black;
+}
+
+.my-gallery-class{
+	width:100%;
+	list-style-type: none;
+}
+
+.blog{
+	display: none;
+	padding: 0px;
+}
+
+.project{
+	display: none;
+	padding: 0px;
+}
+
+.link-style-sm {
+	text-align: right;
+	bottom: 14px;
+	right: 15px;
+	position: absolute;
+}
+
+.link-style-lg {
+	text-align: right;
+	bottom: 17px;
+	right: 19px;
+	position: absolute;
+}
+
+
+.blog-style a{
+	color: red;
+}
+
+.blog-style a:hover{
+	color: black;
+}
+
+.project-style a{
+	color: blue;
+}
+
+.project-style a:hover{
+	color: black;
+}

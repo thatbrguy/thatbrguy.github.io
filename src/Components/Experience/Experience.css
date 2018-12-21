@@ -1,0 +1,120 @@
+.icon-bg-style{
+	width: 50px;
+	height: 50px;
+	border-radius: 25px;
+	background: red;
+	display: inline-block;
+}
+
+.icon-style-code{
+	position: relative;
+	padding-top: 26%;
+	padding-left: 20%;
+	font-size: 25px;
+	color:white;
+}
+
+.icon-style-dev{
+	position: relative;
+	padding-top: 21%;
+	padding-left: 20%;
+	font-size: 30px;
+	color:white;
+}
+
+.icon-style-fw{
+	position: relative;
+	padding-top: 20%;
+	padding-left: 27%;
+	font-size: 30px;
+	color:white;
+}
+
+.skills-text{
+	display:inline-block;
+	position: relative; 
+	padding:0px 0px 10px 10px;
+	bottom: 5px;
+	font-size:20px;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: black;
+  top: 0;
+  bottom: 0;
+  left: 5%;
+  margin-left: -3px;
+}
+
+.timeline-element {
+  padding: 10px 40px;
+  padding-left: 36px;
+  position: relative;
+  background-color: inherit;
+  width: 100%;
+}
+
+
+/* The circles on the timeline */
+.timeline-element::after {
+  content: '';
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-color: blue;
+  border: 4px solid black;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the right */
+.right {
+  left: 5%;
+  text-align: left;
+}
+
+.right::after {
+  left: -20px;
+}
+
+/* The actual content */
+.timeline-content {
+  padding: 20px 30px;
+  background-color: #222;
+  position: relative;
+  border-radius: 6px;
+  color: white;
+}
+
+/* arrows */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 26px;
+  width: 0;
+  z-index: 1;
+  left: 25px;
+  border: medium solid #222;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent #222 transparent transparent;
+}

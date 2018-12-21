@@ -6,15 +6,11 @@
     "@material-ui/core": "^3.6.2",
     "react": "^16.6.3",
     "react-bootstrap": "^0.32.4",
-    "react-collapse": "^4.0.3",
     "react-dom": "^16.6.3",
-    "react-grid-layout": "^0.16.6",
     "react-masonry-component": "^6.2.1",
     "react-motion": "^0.5.2",
     "react-scripts": "2.1.1",
-    "react-scroll": "^1.7.10",
-    "react-scroll-to-component": "^1.0.2",
-    "react-vertical-timeline-component": "^2.3.1"
+    "react-scroll": "^1.7.10"
   },
   "scripts": {
     "start": "react-scripts start",

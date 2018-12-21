@@ -1,0 +1,65 @@
+.footer-line{
+	border-color: white;
+	border-width: 3px; 
+	margin-left: 5%;
+}
+
+.footer-link{
+	color: red;
+}
+
+.footer-link:hover{
+	color: red;
+}
+
+.contact{
+	background: black;
+	color: white;
+	text-align: center;
+	padding-bottom: 10px;
+	padding-top: 20px; 
+	margin-top: 0px;
+	margin-bottom: -20px;
+}
+
+.contact-link{
+	font-size: 40px;
+	margin-bottom: -10px;
+}
+
+.contact-link a{
+	color: white;
+	padding-left: 5px;
+}
+
+.contact-link a:hover{
+	color: red;
+	transition: 0.5s;
+}
+
+.contact-icons {
+	font-size: 27px;
+}
+
+.contact-icons a{
+	color: white;
+	padding-left: 5px;
+}
+
+.contact-icons a:hover{
+	color: red;
+	transition: 0.5s;
+}
+
+.icons {
+	font-size: 27px;
+}
+
+.icons a{
+	color: black;
+}
+
+.icons a:hover{
+	color: red;
+	transition: 0.5s;
+}

@@ -1,0 +1,22 @@
+{
+    "exp": [
+        {
+            "title": "Orbuculum",
+            "role": "Data Science R&D",
+            "duration": "Aug 2018 to Present",
+            "desc": "Researching and experimenting on novel methods of interpreting Machine Learning Classifiers"
+        },
+        {
+            "title": "CloudCV",
+            "role": "Google Code-In Mentor",
+            "duration": "Oct 2018 to Dec 2018",
+            "desc": "Mentoring students for Fabrik!"
+        },
+        {
+            "title": "Orbuculum",
+            "role": "Data Science Intern",
+            "duration": "Jan 2018 to April 2018",
+            "desc": "Data Science Intern"
+        }
+    ]
+}

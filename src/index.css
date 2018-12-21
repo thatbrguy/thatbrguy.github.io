@@ -1,9 +1,7 @@
 body {
   margin: 0;
   background: #222;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: "Ubuntu", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
@@ -370,7 +368,7 @@ code {
   position: absolute;
   width: 40px;
   height: 40px;
-  background-color: red;
+  background-color: blue;
   border: 4px solid black;
   top: 15px;
   border-radius: 50%;
@@ -390,7 +388,7 @@ code {
 /* The actual content */
 .timeline-content {
   padding: 20px 30px;
-  background-color: #777;
+  background-color: #222;
   position: relative;
   border-radius: 6px;
   color: white;
@@ -405,9 +403,9 @@ code {
   width: 0;
   z-index: 1;
   left: 25px;
-  border: medium solid #777;
+  border: medium solid #222;
   border-width: 10px 10px 10px 0;
-  border-color: transparent #777 transparent transparent;
+  border-color: transparent #222 transparent transparent;
 }
 
 @media screen and (max-width: 800px) {

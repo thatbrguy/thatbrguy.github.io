@@ -10,6 +10,27 @@ import Resume from './Resume Nov 2018 v2.pdf';
 
 class NavbarBR extends Component {
 
+  constructor(props) {
+    super(props);
+    this.state = {
+      navExpanded:false 
+    }
+    this.setNavExpanded = this.setNavExpanded.bind(this)
+    this.closeNav = this.closeNav.bind(this)
+  }
+
+  setNavExpanded(value) {
+    this.setState({
+      navExpanded: value
+    });
+  }
+
+  closeNav() {
+    this.setState({
+      navExpanded: false
+    });
+  }
+
   render() {
     /*
     let navStyle = {
@@ -28,34 +49,39 @@ class NavbarBR extends Component {
     */
     return(
 
-       <Navbar inverse collapseOnSelect fixedTop className={this.props.styleProps.navbarClass}>
+       <Navbar inverse 
+               fixedTop 
+               onToggle={this.setNavExpanded} 
+               expanded={this.state.navExpanded} 
+               className={this.props.styleProps.navbarClass}>
         <Navbar.Header>
           <Navbar.Brand className={this.props.styleProps.navbrandClass}>
-            <Link to="home" smooth={true}>
+            <Link to="home" smooth={true} onClick={this.closeNav}>
               <button style={{background: 'transparent', borderColor:'transparent'}}>Bharath Raj</button>
             </Link>
           </Navbar.Brand>
           <Navbar.Toggle />
         </Navbar.Header>
         <Navbar.Collapse className="navbar-collapse-xs">
-          <Nav pullRight className={this.props.styleProps.navrightClass}>
+          <Nav pullRight 
+               className={this.props.styleProps.navrightClass}>
             <NavItem eventKey={1}>
-              <Link to="about" smooth={true} offset={-50} className='navlink'>
+              <Link to="about" smooth={true} offset={-50} onClick={this.closeNav} className='navlink'>
                 About
               </Link>
             </NavItem>
             <NavItem eventKey={2}>
-              <Link to="portfolio" smooth={true} offset={-50} className='navlink'>
+              <Link to="portfolio" smooth={true} offset={-50} onClick={this.closeNav} className='navlink'>
                 Portfolio
               </Link>
             </NavItem>
             <NavItem eventKey={3}>
-              <Link to="exp" smooth={true} offset={-50} className='navlink'>
+              <Link to="exp" smooth={true} offset={-50} onClick={this.closeNav} className='navlink'>
                 Experience
               </Link>
             </NavItem>
             <NavItem eventKey={4}>
-              <Link to="contact" smooth={true} offset={-50} className='navlink'>
+              <Link to="contact" smooth={true} offset={-50} onClick={this.closeNav} className='navlink'>
                 Contact
               </Link>
             </NavItem>
@@ -316,8 +342,8 @@ class PortfolioCard extends Component{
       <div style={cardStyle} 
       className={this.props.filter[this.props.element.tag] ? this.props.element.tag: null}>
         <img style={imgStyle} width={cardStyle.width} src={this.handleImgSrc()} alt='img'/>
-        <h3 style={{paddingLeft: "3px"}}>{this.props.element.title}</h3>
-        <p style={{paddingLeft: "3px"}}>{this.props.element.desc}</p>
+        <h3 style={{paddingLeft: "3px", fontFamily: "Aleo", fontWeight: '700'}}>{this.props.element.title}</h3>
+        <p style={{paddingLeft: "3px", fontFamily: "Ubuntu", fontWeight: '200'}}>{this.props.element.desc}</p>
         <div className={linkClass}>{this.handleLinks(linkData)}</div>
       </div>
     )

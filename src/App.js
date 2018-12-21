@@ -506,32 +506,32 @@ class Skills extends Component {
   }
 
   render() {
-    const skillList = [
-    {
-      'iconClass': "fas fa-code icon-style-code",
-      'skillText': "Code",
-      'desc': 'Python, C, C++, JavaScript, MATLAB, Bash'
-    },
-    {
-      'iconClass': "fab fa-react icon-style-dev",
-      'skillText': "Development",
-      'desc': 'React, Django, AWS, GCP, Git, GIMP'
-    },
-    {
-      'iconClass': "fas fa-fire icon-style-fw",
-      'skillText': "Frameworks",
-      'desc': 'TensorFlow, PyTorch, Keras, Scikit'
+    const skillList = {
+    'code':{
+            'iconClass': "fas fa-code icon-style-code",
+            'skillText': "Code",
+            'desc': 'Python, C, C++, JavaScript, MATLAB, Bash'
+          },
+    'dev':{
+            'iconClass': "fab fa-react icon-style-dev",
+            'skillText': "Development",
+            'desc': 'React, Django, AWS, GCP, Git, GIMP'
+          },
+    'fw':{
+            'iconClass': "fas fa-fire icon-style-fw",
+            'skillText': "Frameworks",
+            'desc': 'TensorFlow, PyTorch, Keras, Scikit'
+          }
     }
-    ]
     return(
       <div style={{color:"black"}}>
           <h2>Acheivements</h2>
           {this.acheivements()}
           <h2>Skills</h2>
           <div>
-            <SkillsIcon skills={skillList[0]} />
-            <SkillsIcon skills={skillList[1]} />
-            <SkillsIcon skills={skillList[2]} />
+            <SkillsIcon skills={skillList['code']} />
+            <SkillsIcon skills={skillList['dev']} />
+            <SkillsIcon skills={skillList['fw']} />
           </div>  
       </div>
     )

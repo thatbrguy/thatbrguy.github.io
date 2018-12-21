@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
-import {Navbar, Nav, NavItem} from 'react-bootstrap';
 import Masonry from 'react-masonry-component';
+import {Navbar, Nav, NavItem} from 'react-bootstrap';
 
 import expData from './exp.json';
+import {Link, Element} from 'react-scroll';
 import portfolioData from './portfolio.json';
-import { Link, Element } from 'react-scroll';
+import Resume from './Resume Nov 2018 v2.pdf';
 
 
 class NavbarBR extends Component {
@@ -122,7 +123,12 @@ class About extends Component {
 
           <div align = "center">
           <div className = "resume-pad">
-            <button className="btn btn-danger">Download Resume</button>
+            <a className="btn btn-danger" 
+               href={Resume} 
+               target="_blank"
+               rel="noopener noreferrer">
+              Download Resume
+            </a>
           </div>
             <hr style={{borderColor:'black', 'borderWidth': '3px'}} />
             

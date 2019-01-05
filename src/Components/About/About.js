@@ -25,7 +25,7 @@ class About extends Component {
                intelligence. I often work on interesting hobby projects and maintain a technical blog 
                on Medium.</p>
             <p>I am always on the lookout for opportunities to learn more and work on exciting projects 
-               in my fields of interest. Scroll down to take a look at my projects, publications and blogs.</p>
+               in the fields of my interest. Scroll down to take a look at my projects, publications and blogs.</p>
           </div>
 
           <div align = "center">

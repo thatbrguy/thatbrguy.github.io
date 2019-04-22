@@ -2,39 +2,39 @@
     "exp": [
         {
             "desc": "Head of Logistics for SSNMUN 2018",
-            "role": "Under Seceretary General",
             "title": "SSN MUN 2018",
-            "duration": "September 2018"
+            "duration": "September 2018",
+            "role": "Under Seceretary General"
         },
         {
             "desc": "Organized AI4Good Hackathon as a part of Tech Club SSN",
-            "role": "Event Head",
             "title": "AI4Good Hackathon",
-            "duration": "September 2018"
+            "duration": "September 2018",
+            "role": "Event Head"
         },
         {
             "desc": "Used neural networks to find salient information in genetic data",
-            "role": "Data Science Intern",
             "title": "Orbuculum",
-            "duration": "Jan 2018 to April 2018"
+            "duration": "Jan 2018 to April 2018",
+            "role": "Data Science Intern"
         },
         {
             "desc": "GCI mentor for the project Fabrik under the CloudCV organisation",
-            "role": "Google Code-In Mentor",
             "title": "CloudCV",
-            "duration": "Oct 2018 to Dec 2018"
+            "duration": "Oct 2018 to Dec 2018",
+            "role": "Google Code-In Mentor"
         },
         {
-            "desc": "Curating content on Machine Learning Computer Vision and AI",
-            "role": "Content Writer",
+            "desc": "Curating well researched articles on topics in Artificial Intelligence Machine Learning and Deep Learning.",
             "title": "BeyondMinds",
-            "duration": "Sep 2018 to Present"
+            "duration": "Sep 2018 to Present",
+            "role": "Content Writer"
         },
         {
             "desc": "Researching and experimenting on novel methods of interpreting Machine Learning Classifiers",
-            "role": "Data Science R&D",
             "title": "Orbuculum",
-            "duration": "Aug 2018 to Present"
+            "duration": "Aug 2018 to Present",
+            "role": "Data Science R&D"
         }
     ]
 }

@@ -54,7 +54,10 @@ if __name__ == '__main__':
     with open('./portfolio.json', 'w') as file:
         file.write(json.dumps(portfolioJson, indent=4))
 
-    if sys.argv[1] == 'update' or sys.argv[1] == 'u':
-        os.rename('./exp.json', '../src/exp.json')
-        os.rename('./portfolio.json', '../src/portfolio.json')
-        os.rename('./achievements.json', '../src/achievements.json')
+    try:
+        if sys.argv[1] == 'update' or sys.argv[1] == 'u':
+            os.rename('./exp.json', '../src/exp.json')
+            os.rename('./portfolio.json', '../src/portfolio.json')
+            os.rename('./achievements.json', '../src/achievements.json')
+    except IndexError:
+        pass

@@ -1,22 +1,23 @@
 import React, { Component } from 'react';
+import {Timeline, TimelineEvent} from 'react-event-timeline';
 import './Experience.css'
 
-class ExperienceCard extends Component{
-  render(){
-    return(
+// class ExperienceCard extends Component{
+//   render(){
+//     return(
 
-      <div className="timeline-element right">
-        <div className="timeline-content">
-          <h2>{this.props.data.role}</h2>
-          <h4>{this.props.data.title}</h4>
-          <h6>{this.props.data.duration}</h6>
-          <p>{this.props.data.desc}</p>
-        </div>
-      </div>
+//       <div className="timeline-element right">
+//         <div className="timeline-content">
+//           <h2>{this.props.data.role}</h2>
+//           <h4>{this.props.data.title}</h4>
+//           <h6>{this.props.data.duration}</h6>
+//           <p>{this.props.data.desc}</p>
+//         </div>
+//       </div>
 
-    )
-  }
-}
+//     )
+//   }
+// }
 
 class SkillsIcon extends Component {
   render() {
@@ -38,30 +39,77 @@ class SkillsIcon extends Component {
 
 class Experience extends Component{
 
-  loopThroughJson(){
-    let exp = this.props.expData;
-    let experienceCards = [];
-    for(let i = exp.length - 1; i >= 0; i--)
-    {
-      let data = exp[i];
-      experienceCards.push(<ExperienceCard data={data}/>)
-    }
-
-    return(
-      <div>
-        {experienceCards}
-      </div>
-    )
-  }
-
   render(){
     return(
-      <div className="timeline">
-        {this.loopThroughJson()}
-      </div>
+      <Timeline orientation="left" lineColor="#333" lineStyle={{width: "4px"}} >
+      {
+        this.props.expData.slice(0).reverse().map((object, i) =>
+          (
+            <TimelineEvent title={object.role} 
+                           subtitle={
+                            <div>
+                              <p style={{margin: "0"}}> {object.title}</p> 
+                              <p style={{margin: "0"}}> {object.duration } </p> 
+                            </div>
+                          }
+                           container="card"
+                           cardHeaderStyle={{background: "#222"}}
+                           bubbleStyle={{
+                              background: 'red',
+                              borderColor: '#333',
+                              borderWidth: '4px'
+                             }} 
+                           titleStyle={{
+                              fontSize: '18px',
+                              color: 'white',
+                              fontFamily:'Ubuntu'
+                             }}
+                           subtitleStyle={{
+                              fontSize: '11px',
+                              color: '#DDD'
+                             }}
+                          contentStyle={{
+                              fontFamily:'Ubuntu',
+                              fontSize:'13.5px',
+                              background: '#EEE',
+                           }}
+            >
+              <p>{object.desc}</p>
+            </TimelineEvent>
+          )
+        )
+      }
+      </Timeline>
     )
   }
 }
+
+// class ExperienceOld extends Component{
+
+//   loopThroughJson(){
+//     let exp = this.props.expData;
+//     let experienceCards = [];
+//     for(let i = exp.length - 1; i >= 0; i--)
+//     {
+//       let data = exp[i];
+//       experienceCards.push(<ExperienceCard data={data}/>)
+//     }
+
+//     return(
+//       <div>
+//         {experienceCards}
+//       </div>
+//     )
+//   }
+
+//   render(){
+//     return(
+//       <div className="timeline">
+//         {this.loopThroughJson()}
+//       </div>
+//     )
+//   }
+// }
 
 class Skills extends Component {
 

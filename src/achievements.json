@@ -1,0 +1,34 @@
+{
+    "achievements": [
+        {
+            "title": "First Place",
+            "date": "August 2017",
+            "place": "Project Display",
+            "desc": "Presented a CNN that can break my university portal's captcha "
+        },
+        {
+            "title": "Runner Up",
+            "date": "January 2018",
+            "place": "AWS Deep Learning Hackathon",
+            "desc": "Built an object detection system to understand hand signs of traffic policemen."
+        },
+        {
+            "title": "Runner Up",
+            "date": "April 2018",
+            "place": "Data Science Challenge",
+            "desc": "10 day kaggle contest involving a highly skewed dataset."
+        },
+        {
+            "title": "People's Choice Award",
+            "date": "August 2018",
+            "place": "Yet Another Hackathon",
+            "desc": "Built a module using Raspberry Pi and Machine Learning to predict assault on a person."
+        },
+        {
+            "title": "Winner",
+            "date": "March 2019",
+            "place": "Motorq Hackathon",
+            "desc": "Built an app that can non intrusively identify Potholes and Car Accidents using sensor data."
+        }
+    ]
+}

@@ -41,7 +41,7 @@ class Experience extends Component{
   loopThroughJson(){
     let exp = this.props.expData;
     let experienceCards = [];
-    for(let i=0; i < exp.length; i++)
+    for(let i = exp.length - 1; i >= 0; i--)
     {
       let data = exp[i];
       experienceCards.push(<ExperienceCard data={data}/>)
@@ -67,34 +67,9 @@ class Skills extends Component {
 
   acheivements(){
     let htmlList = []
-    let acheivementList = [
-    {
-      'title': "People's Choice Award",
-      'place': "Yet Another Hackathon",
-      'date': 'August 2018',
-      'desc': 'Built a module using Raspberry Pi and Machine Learning to predict assault on a person.'
-    },
-    {
-      'title': 'Runner Up',
-      'place': 'Data Science Challenge',
-      'date': 'April 2018',
-      'desc': '10 day kaggle contest involving a highly skewed dataset.'
-    },
-    {
-      'title': 'Runner Up',
-      'place': 'AWS Deep Learning Hackathon',
-      'date': 'January 2018',
-      'desc': "Built an object detection system to understand hand signs of traffic policemen."
-    },
-    {
-      'title': 'First Place',
-      'place':'Project Display',
-      'date': 'August 2017',
-      'desc': "Presented a CNN that can break my university portal's captcha "
-    },
-    ]
+    let acheivementList = this.props.achievementsData;
 
-    for(let i = 0; i < acheivementList.length; i++)
+    for(let i = acheivementList.length - 1; i >= 0; i--)
     {
       let data = acheivementList[i];
       htmlList.push(
@@ -150,6 +125,7 @@ class Skills extends Component {
 
 class ExpSkillsGird extends Component {
   render() {
+    console.log(this.props.achievementsData)
     return(
 
       <div className="container">
@@ -158,7 +134,7 @@ class ExpSkillsGird extends Component {
               <Experience expData={this.props.expData} />
           </div>
           <div className="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-              <Skills />
+              <Skills achievementsData={this.props.achievementsData} />
           </div>
         </div>
       </div>

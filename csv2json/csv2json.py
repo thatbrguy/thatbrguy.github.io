@@ -4,6 +4,18 @@ from collections import OrderedDict
 
 if __name__ == '__main__':
 
+    ## Achievements
+    csvFile = pd.read_csv('achievements.csv')
+    titles = csvFile['Title']
+    places = csvFile['Place']
+    dates = csvFile['Date']
+    descs = csvFile['Description']
+    achievements = [OrderedDict({"title":title, "place":place, "date":date, "desc": desc}) for title, place, date, desc in zip(titles, places, dates, descs)]
+    achievementsJson = {"achievements": achievements}
+    with open('./achievements.json', 'w') as file:
+        file.write(json.dumps(achievementsJson, indent=4))
+
+    ## Experience
     csvFile = pd.read_csv('exp.csv')
     titles = csvFile['Title']
     roles = csvFile['Role']
@@ -13,8 +25,8 @@ if __name__ == '__main__':
     expJson = {"exp": exp}
     with open('./exp.json', 'w') as file:
         file.write(json.dumps(expJson, indent=4))
-    #print(json.dumps(teamJson, indent=4))
-    
+
+    ## Portfolio    
     # tagColor = lambda x: (x == 'blog') ? 'red' : 'blue'
     # Links and LinkText have multiple links and texts separated by ;
     csvFile = pd.read_csv('portfolio.csv')

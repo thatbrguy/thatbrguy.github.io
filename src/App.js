@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import {Element} from 'react-scroll';
 import portfolioData from './portfolio.json';
 import expData from './exp.json';
+import achievementsData from './achievements.json'
 
 import NavbarBR from './Components/Navbar/Navbar.js';
 import About from './Components/About/About.js';
@@ -86,7 +87,8 @@ class App extends Component {
           <SectionBreak section={'Experience'} />
        </Element>
        <div style={{background: 'white'}}>
-          <ExpSkillsGird expData={expData.exp} />
+          <ExpSkillsGird expData={expData.exp} 
+                         achievementsData={achievementsData.achievements} />
        </div>
        <Element name='contact'>
           <Contact year={this.state.year}/>

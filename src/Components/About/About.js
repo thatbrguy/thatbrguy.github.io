@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {Link} from 'react-scroll';
-import Resume from './Resume Nov 2018 v2.pdf';
+import Resume from './Bharath Raj Resume.pdf';
 import ContactIcons from '../Icons/Icons.js';
 
 import './About.css';
@@ -20,12 +20,18 @@ class About extends Component {
         <div className="col-lg-7 col-md-7 col-sm-7 col-xs-12 about-me-text">
           <h1>Let's build something great.</h1>
           <div>
-            <p>Hello. I'm Bharath Raj, an undergraduate student set to graduate at 2019. I actively 
-               work on research in the fields of computer vision, machine learning and artificial 
-               intelligence. I often work on interesting hobby projects and maintain a technical blog 
-               on Medium.</p>
-            <p>I am always on the lookout for opportunities to learn more and work on exciting projects 
-               in the fields of my interest. Scroll down to take a look at my projects, publications and blogs.</p>
+            <p>
+              Hello! I'm Bharath Raj, an undergraduate student set to graduate at 2019. I actively 
+              work on research in the fields of Computer Vision, Machine Learning and Artificial 
+              Intelligence. I am passionate about applying the concepts I learnt by working on interesting 
+              hobby projects and by curating technical blogs on <b className="link"><a target="_blank"
+              rel="noopener noreferrer" href="https://medium.com/@thatbrguy">Medium</a></b>.
+            </p>
+            <p>
+              I am always on the lookout for opportunities to learn more and work on exciting projects 
+              in the fields of my interest. Scroll down to take a look at some of my projects, publications 
+              and blogs.
+            </p>
           </div>
 
           <div align = "center">

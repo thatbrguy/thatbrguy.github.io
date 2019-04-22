@@ -19,6 +19,15 @@
 	transition: 0.5s;
 }
 
+.link a{
+	color: black;
+	font-weight: bold;
+}
+
+.link a:hover{
+	color: red;
+}
+
 .about{
 	color: black;
 	text-align: left;

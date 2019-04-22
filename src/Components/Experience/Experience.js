@@ -2,23 +2,6 @@ import React, { Component } from 'react';
 import {Timeline, TimelineEvent} from 'react-event-timeline';
 import './Experience.css'
 
-// class ExperienceCard extends Component{
-//   render(){
-//     return(
-
-//       <div className="timeline-element right">
-//         <div className="timeline-content">
-//           <h2>{this.props.data.role}</h2>
-//           <h4>{this.props.data.title}</h4>
-//           <h6>{this.props.data.duration}</h6>
-//           <p>{this.props.data.desc}</p>
-//         </div>
-//       </div>
-
-//     )
-//   }
-// }
-
 class SkillsIcon extends Component {
   render() {
     return(
@@ -83,33 +66,6 @@ class Experience extends Component{
     )
   }
 }
-
-// class ExperienceOld extends Component{
-
-//   loopThroughJson(){
-//     let exp = this.props.expData;
-//     let experienceCards = [];
-//     for(let i = exp.length - 1; i >= 0; i--)
-//     {
-//       let data = exp[i];
-//       experienceCards.push(<ExperienceCard data={data}/>)
-//     }
-
-//     return(
-//       <div>
-//         {experienceCards}
-//       </div>
-//     )
-//   }
-
-//   render(){
-//     return(
-//       <div className="timeline">
-//         {this.loopThroughJson()}
-//       </div>
-//     )
-//   }
-// }
 
 class Skills extends Component {
 

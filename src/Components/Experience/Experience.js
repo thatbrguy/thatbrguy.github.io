@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import expData from './exp.json';
 import './Experience.css'
 
 class ExperienceCard extends Component{
@@ -40,10 +39,11 @@ class SkillsIcon extends Component {
 class Experience extends Component{
 
   loopThroughJson(){
+    let exp = this.props.expData;
     let experienceCards = [];
-    for(let i=0; i < expData.exp.length; i++)
+    for(let i=0; i < exp.length; i++)
     {
-      let data = expData.exp[i];
+      let data = exp[i];
       experienceCards.push(<ExperienceCard data={data}/>)
     }
 
@@ -155,7 +155,7 @@ class ExpSkillsGird extends Component {
       <div className="container">
         <div className="row">
           <div className="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-              <Experience />
+              <Experience expData={this.props.expData} />
           </div>
           <div className="col-lg-6 col-md-6 col-sm-6 col-xs-12">
               <Skills />

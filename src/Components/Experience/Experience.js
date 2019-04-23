@@ -24,7 +24,7 @@ class Experience extends Component{
 
   render(){
     return(
-      <Timeline orientation="left" lineColor="#333" lineStyle={{width: "4px"}} >
+      <Timeline orientation="left" lineColor="black" lineStyle={{width: "4px"}} >
       {
         this.props.expData.slice(0).reverse().map((object, i) =>
           (
@@ -39,7 +39,7 @@ class Experience extends Component{
                            cardHeaderStyle={{background: "#222"}}
                            bubbleStyle={{
                               background: 'red',
-                              borderColor: '#333',
+                              borderColor: 'black',
                               borderWidth: '4px'
                              }} 
                            titleStyle={{

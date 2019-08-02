@@ -1,34 +1,34 @@
 {
     "achievements": [
         {
-            "title": "First Place",
-            "place": "Project Display",
+            "desc": "Presented a CNN that can break my university portal's captcha ",
             "date": "August 2017",
-            "desc": "Presented a CNN that can break my university portal's captcha "
+            "place": "Project Display",
+            "title": "First Place"
         },
         {
-            "title": "Runner Up",
-            "place": "AWS Deep Learning Hackathon",
+            "desc": "Built an object detection system to understand hand signs of traffic policemen.",
             "date": "January 2018",
-            "desc": "Built an object detection system to understand hand signs of traffic policemen."
+            "place": "AWS Deep Learning Hackathon",
+            "title": "Runner Up"
         },
         {
-            "title": "Runner Up",
-            "place": "Data Science Challenge",
+            "desc": "10 day kaggle contest involving a highly skewed dataset.",
             "date": "April 2018",
-            "desc": "10 day kaggle contest involving a highly skewed dataset."
+            "place": "Data Science Challenge",
+            "title": "Runner Up"
         },
         {
-            "title": "Peoples Choice Award",
-            "place": "Yet Another Hackathon",
+            "desc": "Built a module using Raspberry Pi and Machine Learning to predict assault on a person.",
             "date": "August 2018",
-            "desc": "Built a module using Raspberry Pi and Machine Learning to predict assault on a person."
+            "place": "Yet Another Hackathon",
+            "title": "Peoples Choice Award"
         },
         {
-            "title": "Winner",
-            "place": "Motorq Hackathon",
+            "desc": "Built an app that can non intrusively identify Potholes and Car Accidents using sensor data.",
             "date": "March 2019",
-            "desc": "Built an app that can non intrusively identify Potholes and Car Accidents using sensor data."
+            "place": "Motorq Hackathon",
+            "title": "Winner"
         }
     ]
 }

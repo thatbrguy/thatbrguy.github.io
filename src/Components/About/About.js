@@ -21,10 +21,13 @@ class About extends Component {
           <h1>Let's build something great.</h1>
           <div>
             <p>
-              Hello! I'm Bharath Raj, an undergraduate student set to graduate at 2019. I actively 
-              work on research in the fields of Computer Vision, Machine Learning and Artificial 
-              Intelligence. I am passionate about applying the concepts I learnt by working on interesting 
-              hobby projects and by curating technical blogs on <b className="link"><a target="_blank"
+              Hello! I'm Bharath Raj. I currently work at Siemens PLM Software where I am 
+              focused on the research and implementation of methods to improve the Perception systems of 
+              Autonomous Vehicles. I love to code and write about interesting concepts in the fields 
+              of Computer Vision, Machine Learning and Artificial Intelligence. You can find some of my 
+              projects on <b className="link"><a target="_blank" rel="noopener noreferrer" 
+              href="https://github.com/thatbrguy">GitHub</a></b> and my technical blogs 
+              on <b className="link"><a target="_blank"
               rel="noopener noreferrer" href="https://medium.com/@thatbrguy">Medium</a></b>.
             </p>
             <p>

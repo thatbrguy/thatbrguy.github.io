@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {Link} from 'react-scroll';
-import Resume from './Bharath Raj Resume.pdf';
+import Resume from './Bharath_Raj_Nagoor_Kani_Resume_201214.pdf';
 import ContactIcons from '../Icons/Icons.js';
 
 import './About.css';
@@ -21,7 +21,7 @@ class About extends Component {
           <h1>Let's build something great.</h1>
           <div>
             <p>
-              Hello! I'm Bharath Raj. I currently work at Siemens PLM Software where I am 
+              Hello! I'm Bharath Raj. I currently work at Siemens Digital Industries Software where I am 
               focused on the research and implementation of methods to improve the Perception systems of 
               Autonomous Vehicles. I love to code and write about interesting concepts in the fields 
               of Computer Vision, Machine Learning and Artificial Intelligence. You can find some of my 

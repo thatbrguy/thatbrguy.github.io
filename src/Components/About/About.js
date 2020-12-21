@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {Link} from 'react-scroll';
-import Resume from './Bharath_Raj_Nagoor_Kani_Resume_201214.pdf';
+import Resume from './Bharath_Raj_Nagoor_Kani_Resume_201216.pdf';
 import ContactIcons from '../Icons/Icons.js';
 
 import './About.css';

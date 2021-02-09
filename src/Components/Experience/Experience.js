@@ -104,16 +104,31 @@ class Skills extends Component {
     'dev':{
             'iconClass': "fab fa-react icon-style-dev",
             'skillText': "Development",
-            'desc': 'React, Django, AWS, GCP, Git, GIMP'
+            'desc': 'Docker, Git, AWS, GCP, Flask, GIMP'
           },
     'fw':{
             'iconClass': "fas fa-fire icon-style-fw",
             'skillText': "Frameworks",
-            'desc': 'TensorFlow, PyTorch, Keras, Scikit'
+            'desc': 'ROS, TensorFlow, PyTorch, Keras, Scikit'
           }
     }
     return(
       <div style={{color:"black"}}>
+          <h2>Publications</h2>
+          <div>
+            <ul>
+              <li>
+                <h4>Exploring Techniques to Improve Activity Recognition using Human Pose Skeletons</h4>
+                <h6 style={{marginTop: '-5px'}}><i><u><b>Bharath Raj N.,</b></u> Anand Subramanian, Kashyap Ravichandran, Venkateswaran N.</i></h6>
+                <p>Published at the <b>HADCV workshop at WACV 2020</b>.</p>
+              </li>
+              <li>
+                <h4>Single Image Haze Removal Using a Generative Adversarial Network</h4>
+                <h6 style={{marginTop: '-5px'}}><i><u><b>Bharath Raj N.,</b></u> Venkateswaran N.</i></h6>
+                <p>Published at <b>WiSPNET 2020</b>.</p>
+              </li>
+            </ul>
+          </div>
           <h2>Acheivements</h2>
           {this.acheivements()}
           <h2>Skills</h2>

@@ -1,34 +1,28 @@
 {
     "exp": [
         {
-            "duration": "Jan 2018 to April 2018",
+            "title": "Orbuculum",
             "role": "Data Science Intern",
-            "desc": "Used neural networks to find salient information in genetic data.",
-            "title": "Orbuculum"
+            "duration": "Jan 2018 to April 2018",
+            "desc": "Explored the usage of several machine learning techniques to classify and identify salient parts of genomic data."
         },
         {
-            "duration": "Sep 2018 to Present",
-            "role": "Content Writer",
-            "desc": "Curating well researched articles on topics in Artificial Intelligence Machine Learning and Deep Learning.",
-            "title": "BeyondMinds"
-        },
-        {
-            "duration": "Oct 2018 to Dec 2018",
+            "title": "CloudCV",
             "role": "Google Code-In Mentor",
-            "desc": "GCI mentor for the project Fabrik under the CloudCV Organisation.",
-            "title": "CloudCV"
+            "duration": "Oct 2018 to Dec 2018",
+            "desc": "GCI mentor for the project Fabrik under the CloudCV Organisation."
         },
         {
-            "duration": "Aug 2018 to April 2019",
+            "title": "Orbuculum",
             "role": "Data Science R&D",
-            "desc": "Researching and experimenting on novel methods of interpreting Machine Learning Classifiers.",
-            "title": "Orbuculum"
+            "duration": "Aug 2018 to April 2019",
+            "desc": "Explored the usage of several machine learning techniques to classify and identify salient parts of genomic data."
         },
         {
-            "duration": "May 2019 to Present",
+            "title": "Siemens PLM Software",
             "role": "Associate Engineer",
-            "desc": "Research and Implementation of state of the art methods in Computer Vision and Machine Learning to improve the Perception system of Autonomous Vehicles.",
-            "title": "Siemens Digital Industries Software"
+            "duration": "May 2019 to Present",
+            "desc": "Building models, algorithms and systems for myriad ADAS applications. Primarily working on computer vision, deep learning and state estimation concepts."
         }
     ]
 }

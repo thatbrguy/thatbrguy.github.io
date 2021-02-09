@@ -1,34 +1,34 @@
 {
     "achievements": [
         {
-            "desc": "Presented a CNN that can break my university portal's captcha ",
-            "date": "August 2017",
+            "title": "First Place",
             "place": "Project Display",
-            "title": "First Place"
+            "date": "August 2017",
+            "desc": "Presented a live demonstration of a CNN that could break some simple captcha."
         },
         {
-            "desc": "Built an object detection system to understand hand signs of traffic policemen.",
-            "date": "January 2018",
+            "title": "Runner Up",
             "place": "AWS Deep Learning Hackathon",
-            "title": "Runner Up"
+            "date": "January 2018",
+            "desc": "Trained an object detection algorithm that could detect a few hand signs."
         },
         {
-            "desc": "10 day kaggle contest involving a highly skewed dataset.",
-            "date": "April 2018",
+            "title": "Runner Up",
             "place": "Data Science Challenge",
-            "title": "Runner Up"
+            "date": "April 2018",
+            "desc": "A 10 day contest involving a highly skewed dataset to detect debit card fraud."
         },
         {
-            "desc": "Built a module using Raspberry Pi and Machine Learning to predict assault on a person.",
-            "date": "August 2018",
+            "title": "Peoples Choice Award",
             "place": "Yet Another Hackathon",
-            "title": "Peoples Choice Award"
+            "date": "August 2018",
+            "desc": "Presented a simple carry-on device created using a Raspberry Pi and an accelerometer sensor that can detect if a person has been assualted and if so sends SMS alerts."
         },
         {
-            "desc": "Built an app that can non intrusively identify Potholes and Car Accidents using sensor data.",
-            "date": "March 2019",
+            "title": "Winner",
             "place": "Motorq Hackathon",
-            "title": "Winner"
+            "date": "March 2019",
+            "desc": "Demonstrated a proof of concept of an Android app that could be potentially used to non-intrusively detect potholes using an LSTM that analyzes sensor readings from the mobile phone."
         }
     ]
 }

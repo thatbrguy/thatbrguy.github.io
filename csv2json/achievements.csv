@@ -2,5 +2,5 @@ Title,Place,Date,Description
 First Place,Project Display,August 2017,Presented a live demonstration of a CNN that could break some simple captcha.
 Runner Up,AWS Deep Learning Hackathon,January 2018,Trained an object detection algorithm that could detect a few hand signs.
 Runner Up,Data Science Challenge,April 2018,A 10 day contest involving a highly skewed dataset to detect debit card fraud.
-Peoples Choice Award,Yet Another Hackathon,August 2018,Presented a simple carry-on device created using a Raspberry Pi and an accelerometer sensor that can detect if a person has been assualted and if so sends SMS alerts.
+Peoples Choice Award,Yet Another Hackathon,August 2018,Presented a simple carry-on device created using a Raspberry Pi and an accelerometer sensor that can detect if a person has been assaulted and if so sends SMS alerts.
 Winner,Motorq Hackathon,March 2019,Demonstrated a proof of concept of an Android app that could be potentially used to non-intrusively detect potholes using an LSTM that analyzes sensor readings from the mobile phone.

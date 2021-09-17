@@ -21,8 +21,8 @@ class About extends Component {
           <h1>Let's build something great.</h1>
           <div>
             <p>
-              Hello! I'm Bharath Raj. I currently work at Siemens Digital Industries Software where I build 
-              models, algorithms and systems for myriad ADAS applications. My work typically revolves around 
+              I currently work at Siemens Digital Industries Software where I build 
+              models, algorithms and systems for myriad ADAS and ML applications. My work typically revolves around 
               Computer Vision, Machine Learning and State Estimation concepts. I love to explore and dive deeper 
               into the fields that I find interesting by working on hobby projects and creating technical blogs. You can 
               find some of my projects on <b className="link"><a target="_blank" rel="noopener noreferrer" 

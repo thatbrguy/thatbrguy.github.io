@@ -71,7 +71,7 @@ class App extends Component {
         <Element name="home"></Element>
         <NavbarBR  styleProps={this.state} />
         <div className = 'container intro' >
-          <p>Research.</p> <p>Code.</p> <p>Blog.</p>
+          <p>Hello! I am</p> <p>Bharath Raj</p>
        </div>
        <Element name='about'></Element>
        <div style={{backgroundColor:"white"}}>

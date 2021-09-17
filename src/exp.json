@@ -4,25 +4,25 @@
             "title": "Orbuculum",
             "role": "Data Science Intern",
             "duration": "Jan 2018 to April 2018",
-            "desc": "Explored the usage of several machine learning techniques to classify and identify salient parts of genomic data."
-        },
-        {
-            "title": "CloudCV",
-            "role": "Google Code-In Mentor",
-            "duration": "Oct 2018 to Dec 2018",
-            "desc": "GCI mentor for the project Fabrik under the CloudCV Organisation."
+            "desc": "Explored the usage of several machine learning techniques to classify and identify salient parts of genomic data. Executed tasks during part time while I was an undergraduate student."
         },
         {
             "title": "Orbuculum",
             "role": "Data Science R&D",
             "duration": "Aug 2018 to April 2019",
-            "desc": "Explored the usage of several machine learning techniques to classify and identify salient parts of genomic data."
+            "desc": "Explored the usage of several machine learning techniques to classify and identify salient parts of genomic data. Executed tasks during part time while I was an undergraduate student."
+        },
+        {
+            "title": "CloudCV",
+            "role": "Google Code-In Mentor",
+            "duration": "Oct 2018 to Dec 2018",
+            "desc": "GCI mentor for the project Fabrik under the CloudCV Organization."
         },
         {
             "title": "Siemens PLM Software",
-            "role": "Associate Engineer",
+            "role": "Associate ES Engineer",
             "duration": "May 2019 to Present",
-            "desc": "Building models, algorithms and systems for myriad ADAS applications. Primarily working on computer vision, deep learning and state estimation concepts."
+            "desc": "Building models, algorithms and systems for myriad ADAS and ML applications. My work typically revolves around computer vision, machine learning and state estimation concepts."
         }
     ]
 }

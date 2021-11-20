@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Bharath Raj</title>
+  <link rel="icon" type="image/x-icon" href="./imgs/coffee-cup.ico" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&family=Lato&display=swap" rel="stylesheet"><link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!-- Navbar -->
+
+<!--
+<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarData" aria-controls="navbarData" aria-expanded="false" aria-label="Toggle Navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarData">
+    <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">One</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Two</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Three</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+-->
+
+<!-- 
+  NOTES:
+  * For image centering, followed this reference: https://stackoverflow.com/a/51702957 
+-->
+
+<div class="container-fluid">
+  
+  <!-- Introduction -->
+  <div class="row intro-bg">
+    <div class="col offset-sm-1">
+      <div class="intro-block">
+        <span class="intro-hi intro-font-size"> Hi! I am </span>
+        <span class="text-gradient intro-name intro-font-size"> Bharath Raj </span>
+      </div>
+    </div>
+  </div>
+  
+  <!-- About -->
+  <div class="row about-pad">
+    <div class="col-sm-3 order-sm-2 d-flex align-items-center justify-content-center img-helper">
+      <img src="https://raw.githubusercontent.com/thatbrguy/thatbrguy.github.io/master/me.jpg" alt="portrait" class="img-fluid intro-img">
+    </div>
+    <div class="col-sm-7 order-sm-1 offset-sm-1 intro-top-pad content-font">
+      <p>I currently work at Siemens Digital Industries Software as part of the Intelligent Controls Systems (ICS) team where I build models, algorithms and systems for myriad autonomous driving and general machine learning applications. </p>
+
+      <p>I am generally interested in various problems related to perception and using learning based methods for mobile robotics. Of late, I am specifically interested in researching about how to "best" combine machine learning with classical methods, specifically for mobile robotic applications.</p>
+
+      <p>I am always on the lookout for opportunities to learn more and work on exciting projects in the fields of my interest. Scroll down to take a look at some of my projects, publications and blogs.</p>
+      <p style="text-align: center;">
+        <a href="https://github.com/thatbrguy" target="_blank">GitHub</a> / Resume / <a href="mailto:bharathrajn98@gmail.com" target="_blank">Email</a> / <a href="https://www.linkedin.com/in/bharathrajn/" target="_blank">LinkedIn</a> / <a href="https://medium.com/@thatbrguy">Blog</a>
+      </p>
+    </div>
+  </div>
+  
+  <!-- Selected Work Intro -->
+  <hr style = "background-color:black">
+  <div class="row">
+    <div class="col-md-8 offset-md-2">
+      <h1 style="font-family: Ubuntu"> Selected Work </h1>
+      <p class="content-font">
+      In this section, a selection of my projects, publications and blogs are listed.
+      </p>
+    </div>
+  </div>
+  
+  <!-- Selected Work 1 -->
+  <div class="row">
+    <div class="col-md-8 offset-md-2">
+      <hr style = "background-color:black">
+      <span class="tag-project push-tag"> Project </span>
+      <h2 class="item-title"> NeRF TensorFlow 2 </h2>
+      <div class="row">
+        <div class="col-lg-4 d-flex align-items-center justify-content-center">
+          <img src="./imgs/nerf_custom_dataset_picture.png" alt="custom_dataset_picture" class="img-fluid item-img">
+        </div>
+        <div class="col-lg-8 item-desc content-font">
+          <ul>
+            <li> Created an implementation of NeRF from scratch in TensorFlow 2 for 360-degree inward-facing scenes. </li>
+            <li> Includes implementation of components such as an algorithm to solve for the nearest 3D point to N lines, inverse transform sampling and more. </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Selected Work 2 -->
+  <div class="row">
+    <div class="col-md-8 offset-md-2">
+      <hr style = "background-color:black">
+      <span class="tag-project push-tag"> Project </span>
+      <h2 class="item-title"> Open Source Contributions to Kornia </h2>
+      <div class="row">
+        <div class="col-lg-4 d-flex align-items-center justify-content-center">
+          <img src="./imgs/kornia_logo_only.png" alt="kornia_logo_only" class="img-fluid item-img">
+        </div>
+        <div class="col-lg-8 item-desc content-font">
+          <ul>
+            <li> Implemented a Direct Linear Transform (DLT) based Perspective-n-Point (PnP) solver. </li>
+            <li> Contributed many other enhancements and fixes to various parts of the repository. </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Selected Work 3 -->
+  <div class="row">
+    <div class="col-md-8 offset-md-2">
+      <hr style = "background-color:black">
+      <span class="tag-publication push-tag"> Publication </span>
+      <h2 class="item-title"> Exploring Techniques to Improve Activity Recognition using Human Pose Skeletons </h2>
+      <p><i><b><u>Bharath Raj N.</u></b>, Anand Subramanian, Kashyap Ravichandran, Venkateswaran N.</i></p>
+      <div class="row">
+        <div class="col-lg-4 d-flex align-items-center justify-content-center">
+          <img src="./imgs/poster_human_pose.png" alt="poster_human_pose" class="img-fluid item-img">
+        </div>
+        <div class="col-lg-8 item-desc content-font">
+          <ul>
+            <li> Explored the efficacy of using hand crafted feature extraction techniques and some train-time techniques such as keypoint dropout on improving human pose skeleton based activity recognition performance. </li>
+            <li> Published at the <b>HADCV workshop at WACV 2020</b>. </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Selected Work 4 -->
+  <div class="row">
+    <div class="col-md-8 offset-md-2">
+      <hr style = "background-color:black">
+      <span class="tag-publication push-tag"> Publication </span>
+      <h2 class="item-title"> Single Image Haze Removal Using a Generative Adversarial Network </h2>
+      <p><i><b><u>Bharath Raj N.</u></b>, Venkateswaran N.</i></p>
+      <div class="row">
+        <div class="col-lg-4 d-flex align-items-center justify-content-center">
+          <img src="./imgs/dehaze_img.png" alt="dehaze_img" class="img-fluid item-img">
+        </div>
+        <div class="col-lg-8 item-desc content-font">
+          <ul>
+            <li> Created a conditional GAN (cGAN) based architecture to dehaze images. The generator of the cGAN used the 56 Layer Tiramisu model. A weighted loss function was used for the generator. </li>
+            <li> Code and first version of the preprint were launched in 2018. Project currently has more than 70 stars on GitHub. </li>
+            <li> Paper published at <b>WiSPNET 2020</b>. </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Selected Work 5 -->
+  <div class="row">
+    <div class="col-md-8 offset-md-2">
+      <hr style = "background-color:black">
+      <span class="tag-project push-tag"> Project </span>
+      <h2 class="item-title"> Deploying Tiny YOLOv2 on Jetson Nano using DeepStream </h2>
+      <div class="row">
+        <div class="col-lg-4 d-flex align-items-center justify-content-center">
+          <img src="./imgs/jetson.jpeg" alt="jetson" class="img-fluid item-img">
+        </div>
+        <div class="col-lg-8 item-desc content-font">
+          <ul>
+            <li> Deployed a Tiny YOLOv2 ONNX model on NVIDIA Jetson Nano using the DeepStream SDK. </li>
+            <li> Modified existing C++ code to enable it to parse the output of the TinyYOLOv2 model. </li>
+            <li> Blog post is featured in the Jetson Community Resources page in the Deep Learning section. (<a href="https://developer.nvidia.com/embedded/community/resources\#deep_learning" target="_blank">link</a>)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Selected Work 6 -->
+  <div class="row">
+    <div class="col-md-8 offset-md-2">
+      <hr style = "background-color:black">
+      <span class="tag-article"> Article </span>
+      <h2 class="item-title"> Technical Articles </h2>
+      <div class="row">
+        <div class="col-lg-4 d-flex align-items-center justify-content-center">
+          <img src="./imgs/files.png" alt="files_picture" class="img-fluid item-img">
+        </div>
+        <div class="col-lg-8 item-desc content-font">
+            <p>Authored technical articles on various topics in machine learning and computer vision. A select few articles are mentioned below:</p>
+          <ul>
+            <li> <b>Advances in Generative Adversarial Networks</b> (<i>Jan 2019, <a href="https://medium.com/beyondminds/advances-in-generative-adversarial-networks-7bad57028032" target="_blank">link</i></a>) </li>
+            <li> <b>An Overview of Human Pose Estimation with Deep Learning</b> (<i>Apr 2019, <a href="https://medium.com/beyondminds/an-overview-of-human-pose-estimation-with-deep-learning-d49eb656739b" target="_blank">link</i></a>) </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Selected Work Template -->
+  <!--
+  <div class="row">
+    <div class="col-md-8 offset-md-2">
+      <hr style = "background-color:black">
+      <span class="tag-project push-tag"> Project </span> <span class="tag-publication push-tag"> Publication </span> <span class="tag-article"> Article </span>
+      <h2 class="item-title"> Title </h2>
+      <div class="row">
+        <div class="col-lg-4 d-flex align-items-center justify-content-center">
+          <img src="https://raw.githubusercontent.com/thatbrguy/thatbrguy.github.io/master/portfolio/pose.jpeg" alt="test_img" class="img-fluid">
+        </div>
+        <div class="col-lg-8 item-desc">
+          <ul>
+            <li> Mauris eget ligula turpis. Integer suscipit pretium augue, eu vulputate quam condimentum vel. Phasellus in lacus varius, luctus sapien id, congue ligula. Nullam quis quam nec velit elementum cursus ac et urna. </li>
+            <li> Mauris eget ligula turpis. Integer suscipit pretium augue, eu vulputate quam condimentum vel. Phasellus in lacus varius, luctus sapien id, congue ligula. Nullam quis quam nec velit elementum cursus ac et urna. </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+    -->
+  
+  <!-- Footer -->
+  <div class="row" style="padding-top:20px">
+    <div class="col footer-body">
+      <div style="text-align: center;">
+      <button class="button-style" onclick='window.scrollTo({top: 0, behavior: "smooth"});'><i class="fa fa-chevron-up"></i></button></div>
+      <hr class="footer-line">
+      <div class="footer-contents">
+        <p class="footer-text">
+          <div>Attribution: Favicon and the file icon (used in "Technical Articles") made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>.</div>
+          <div>Attribution: Kornia logo was taken from the kornia <a href="https://github.com/kornia/kornia" target="_blank">repository</a>.</div>
+        </p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+<!-- partial -->
+  
+</body>
+</html>

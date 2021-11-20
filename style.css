@@ -1,0 +1,171 @@
+/* Introduction */
+.intro-hi {
+  color: white;
+  font-family: Ubuntu, serif;
+}
+
+.intro-name {
+  font-family: Ubuntu, serif;
+}
+
+.intro-font-size{
+  font-size: 6vw;
+}
+
+/*.intro-font-size{
+  font-size: 150px;
+}*/
+
+.intro-bg{
+  background-color: black;
+}
+
+.intro-img{
+  border-radius:50%; 
+  border:5px black solid;
+  max-height: 300px;
+}
+
+.content-font{
+  font-family: Lato, sans-serif;
+  font-size: 13.5pt;
+}
+
+@media screen and (min-width: 1500px) {
+  .intro-font-size{
+    font-size: 93px;
+  }
+
+  .content-font{
+    font-family: Lato, sans-serif;
+    font-size: 15.5pt;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  .intro-block span{
+    display: block;
+  }
+  
+  .intro-font-size{
+    font-size: 12vw;
+  }
+
+}
+
+@media screen and (max-width: 576px) {
+  .img-helper{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+  .intro-top-pad{
+    padding-top: 20px;
+  }
+
+}
+
+/* About */
+
+.about-pad{
+  padding-top: 20px;
+}
+
+/* Tags */
+
+.tag-project {
+  padding: 3px 5px 3px 7px;
+  background-color: #000080;
+  color: white;
+  font-family: Ubuntu, serif;
+  font-size: 14px;
+  border: 5px solid black;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+}
+
+.tag-publication {
+  padding: 3px 5px 3px 7px;
+  background-color: green;
+  color: white;
+  font-family: Ubuntu, serif;
+  font-size: 14px;
+  border: 5px solid black;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+}
+
+.tag-article {
+  padding: 3px 5px 3px 7px;
+  background-color: red;
+  color: white;
+  font-family: Ubuntu, serif;
+  font-size: 14px;
+  border: 5px solid black;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+}
+
+.push-tag{
+  margin-right: 3px;
+}
+
+/* Items */
+
+.item-title{
+  padding-top: 10px;
+  font-family: Ubuntu, serif;
+}
+
+.item-desc{
+  padding-top: 17px;
+}
+
+.item-img{
+  max-height: 150px;
+}
+
+/* Footer */
+
+.footer-line{
+  background-color: white;
+}
+
+.footer-body{
+  background-color: black;
+  padding-top: 35px;
+}
+
+.footer-contents{
+  color: white;
+  text-align: center;
+  font-size: 12px;
+}
+
+.footer-text{
+  margin-bottom: 0px;
+}
+
+.button-style{
+  color: rgba(245,145,32,1);
+  font-size: 35px;
+  background: transparent;
+  border: none;
+}
+
+/* Reference for text gradient: https://fossheim.io/writing/posts/css-text-gradient/ */
+.text-gradient {
+    background: rgb(255,186,20);
+    background: linear-gradient(146deg, rgba(255,186,20,1) 9%, rgba(255,103,15,1) 58%, rgba(251,64,64,1) 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+}

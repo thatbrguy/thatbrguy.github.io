@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Left my role at Siemens Digital Industries after 3 wonderful years!
+Left my role at Siemens Digital Industries Software after 3 wonderful years!

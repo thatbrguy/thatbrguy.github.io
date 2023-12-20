@@ -19,9 +19,11 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-Humans are able to create complex mental representations of real-world scenes from just a brief glance. Even though such scenes contain several objects at various locations, each having diverse material characteristics and being illuminated by arbitrary light sources, we are able to implicitly reason about these **properties** and utilize them to plan and navigate.
+I am interested in creating algorithms that can reason about scenes with the same proficiency as humans. 
 
-I am interested in creating algorithms that can reason about scenes as effective as humans do. To this end, I am excited to research (neural) representations and techniques that can effectively leverage priors from large foundational models to infer properties of real-world scenes from casually captured images and videos.
+Everyday scenes consist of multiple objects positioned in diverse spatial arrangements, with each object presenting distinct physical properties, including dynamics, appearance and structure. Humans are able to implicitly create complex mental representations of these properties from just a brief glance, enabling them to plan and interact with the environment.
+
+I am excited to research representations and techniques that can effectively leverage priors from large foundation models to infer physical properties of scenes from limited observations of casually captured images and videos towards enabling great applications in robotics and graphics.
 
 Prior to joining CMU, I spent 3 incredible years at Siemens Digital Industries Software as part of the Intelligent Control Systems (ICS) team where I built models, algorithms and systems for myriad autonomous driving and general machine learning applications. Please checkout my [resume](assets/pdf/Bharath_Raj_Nagoor_Kani_Resume.pdf) for additional information about my work.
 

@@ -27,4 +27,4 @@ I am excited to research representations and techniques that can effectively lev
 
 Prior to joining CMU, I spent 3 incredible years at Siemens Digital Industries Software as part of the Intelligent Control Systems (ICS) team where I built models, algorithms and systems for myriad autonomous driving and general machine learning applications. Please checkout my [resume](assets/pdf/Bharath_Raj_Nagoor_Kani_Resume.pdf) for additional information about my work.
 
-I am currently on the lookout for **PhD oppurtunities** starting **Fall 2024**! Please reach out if you think I would be a good fit for your lab.
+I am currently on the lookout for **Summer Internship Opportunities** starting **May 2024**! Please reach out if you think I would be a good fit for your team.

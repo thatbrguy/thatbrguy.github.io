@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: MS in Robotics @ <b>Carnegie Mellon University</b> | Advised by <a href="https://shubhtuls.github.io/" target="_blank">Dr. Shubham Tulsiani</a>
+subtitle: CS PhD Student @ <b>Cornell University</b> | Advised by <a href="https://www.cs.cornell.edu/~snavely/" target="_blank">Noah Snavely</a>
 
 profile:
   align: right
@@ -19,12 +19,8 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-I am interested in creating algorithms that can reason about scenes with the same proficiency as humans. 
+I am interested in creating algorithms that can model the structure, appearance and dynamics of the world around us from casually captured images and videos. To this end, I typically work in the intersection of learning based 3D representations, computer vision and graphics.
 
-Everyday scenes consist of multiple objects positioned in diverse spatial arrangements, with each object presenting distinct physical properties, including dynamics, appearance and structure. Humans are able to implicitly create complex mental representations of these properties from just a brief glance, enabling them to plan and interact with the environment.
+Prior to joining Cornell for my PhD, I graduated from the [MS in Robotics](https://www.ri.cmu.edu/education/academic-programs/master-of-science-robotics/) program at [Carnegie Mellon University](https://www.cmu.edu/) where I was advised by [Shubham Tulsiani](https://shubhtuls.github.io/). There, I had explored problems in the intersection of diffusion models and learning based 3D representations. Please checkout my [resume](assets/pdf/Bharath_Raj_Nagoor_Kani_Resume.pdf) for additional information about my research and work experience.
 
-I am excited to research representations and techniques that can effectively leverage priors from large foundation models to infer physical properties of scenes from limited observations of casually captured images and videos towards enabling great applications in robotics and graphics.
-
-Prior to joining CMU, I spent 3 incredible years at Siemens Digital Industries Software as part of the Intelligent Control Systems (ICS) team where I built models, algorithms and systems for myriad autonomous driving and general machine learning applications. Please checkout my [resume](assets/pdf/Bharath_Raj_Nagoor_Kani_Resume.pdf) for additional information about my work.
-
-I am currently on the lookout for **Summer Internship Opportunities** starting **May 2024**! Please reach out if you think I would be a good fit for your team.
+I am always excited to chat about research, especially about topics related to 3D computer vision and generative models. Please feel free to reach out!

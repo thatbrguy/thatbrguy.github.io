@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Joined **Google Deepmind** as a Student Researcher.
+Joined **Google Deepmind** as a Student Researcher for Summer 2025.

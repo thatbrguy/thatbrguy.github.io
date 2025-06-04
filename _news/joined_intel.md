@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Joined **Intel** as a Research Scientist Intern.
+Joined **Intel** as a Research Scientist Intern for Summer 2024.

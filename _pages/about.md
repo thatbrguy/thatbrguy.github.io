@@ -23,6 +23,7 @@ I am interested in creating algorithms that can model the structure, appearance 
 
 Prior to joining Cornell for my PhD, I graduated from the MS in Robotics program at Carnegie Mellon University where I was advised by [Shubham Tulsiani](https://shubhtuls.github.io/). There, I had explored problems in the intersection of diffusion models and learning based 3D representations. Please checkout my [resume](assets/pdf/Bharath_Raj_Nagoor_Kani_Resume.pdf) for additional information about my research and work experience.
 
-<!-- I am always excited to chat about research, especially about topics related to 3D computer vision and generative models. Please feel free to reach out! -->
+I am always excited to chat about research, especially about topics related to 3D computer vision and generative models. Please feel free to reach out!
 
-*I am currently on the lookout for **Summer Research Internship** roles starting **May 2025**. Please feel free to reach out if you think I would be a good fit for your team!*
+<!-- *I am currently on the lookout for **Summer Research Internship** roles starting **May 2025**. Please feel free to reach out if you think I would be a good fit for your team!*
+ -->

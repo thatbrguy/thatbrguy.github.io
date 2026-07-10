@@ -3,8 +3,8 @@
   --fg: #1a1a1a;
   --muted: #6b6b6b;
   --border: #e5e5e5;
-  --link: #1a1a1a;
-  --accent: #3b6ef2;
+  --link: #d2691e;
+  --accent: #a8500f;
   --max-width: 920px;
 }
 
@@ -14,8 +14,8 @@
     --fg: #e8e8e8;
     --muted: #9a9a9a;
     --border: #2a2a2a;
-    --link: #e8e8e8;
-    --accent: #7aa2ff;
+    --link: #ff9f45;
+    --accent: #ffb877;
   }
 }
 
@@ -24,8 +24,8 @@
   --fg: #e8e8e8;
   --muted: #9a9a9a;
   --border: #2a2a2a;
-  --link: #e8e8e8;
-  --accent: #7aa2ff;
+  --link: #ff9f45;
+  --accent: #ffb877;
 }
 
 :root[data-theme="light"] {
@@ -33,8 +33,8 @@
   --fg: #1a1a1a;
   --muted: #6b6b6b;
   --border: #e5e5e5;
-  --link: #1a1a1a;
-  --accent: #3b6ef2;
+  --link: #d2691e;
+  --accent: #a8500f;
 }
 
 * {
@@ -108,15 +108,9 @@ body {
 }
 
 h1 {
-  font-size: 1.65rem;
+  font-size: 2.2rem;
   margin: 0 0 0.35rem;
   font-weight: 600;
-}
-
-.subtitle {
-  margin: 0 0 1.1rem;
-  color: var(--muted);
-  font-size: 0.98rem;
 }
 
 .bio {
@@ -191,7 +185,7 @@ a:hover {
 }
 
 .entry-title {
-  font-size: 1.02rem;
+  font-size: 1.15rem;
   font-weight: 600;
   margin: 0 0 0.3rem;
 }
@@ -209,14 +203,7 @@ a:hover {
 
 .entry-venue {
   margin: 0 0 0.5rem;
-  color: var(--muted);
-  font-size: 0.88rem;
-  font-style: italic;
-}
-
-.entry-summary {
-  margin: 0 0 0.5rem;
-  font-size: 0.96rem;
+  font-size: 0.92rem;
 }
 
 .entry-links {

@@ -1,7 +1,6 @@
 ---
 title: Progressive Photon Mapping
 context: Project submission for Physics-based Rendering, 2023
-order: 1
 image: assets/img/publication_preview/rendering_competition.png
 summary: Added progressive photon mapping, a GGX BRDF, and directional lighting to a custom ray tracer to realistically render caustics in a swimming pool scene.
 links:

@@ -153,19 +153,28 @@
     return { article: article, body: body };
   }
 
+  // Name variants to bold when they appear in an author list, longest first
+  // so a longer variant is never left partially matched by a shorter one.
+  var SELF_NAMES = ["Bharath Raj Nagoor Kani", "Bharath Raj N."];
+
+  function boldSelf(authors) {
+    var result = authors;
+    SELF_NAMES.forEach(function (name) {
+      result = result.split(name).join("<b>" + name + "</b>");
+    });
+    return result;
+  }
+
   function renderPublication(data) {
     var shell = entryShell(data);
     var body = shell.body;
 
     body.appendChild(el("h3", "entry-title", data.title || ""));
     if (data.authors) {
-      body.appendChild(el("p", "entry-authors", data.authors));
+      body.appendChild(el("p", "entry-authors", boldSelf(data.authors)));
     }
     if (data.venue) {
       body.appendChild(el("p", "entry-venue", data.venue));
-    }
-    if (data.summary) {
-      body.appendChild(el("p", "entry-summary", data.summary));
     }
 
     var pairs = [];
@@ -185,9 +194,6 @@
     if (data.context) {
       body.appendChild(el("p", "entry-meta", data.context));
     }
-    if (data.summary) {
-      body.appendChild(el("p", "entry-summary", data.summary));
-    }
 
     var pairs = (data.links || [])
       .filter(function (l) { return l.label && l.url; })
@@ -195,6 +201,13 @@
     if (pairs.length) body.appendChild(renderLinksRow(pairs));
 
     return shell.article;
+  }
+
+  // Filenames are expected to start with a YYMMDD date prefix (e.g.
+  // "241001-upfusion.md"), which is used to sort entries newest-first.
+  function datePrefix(filename) {
+    var m = filename.match(/^(\d{6})-/);
+    return m ? m[1] : "000000";
   }
 
   function loadCollection(basePath, filenames, containerId, renderFn) {
@@ -209,6 +222,10 @@
             return res.text();
           })
           .then(parseFrontmatter)
+          .then(function (data) {
+            data._date = datePrefix(name);
+            return data;
+          })
           .catch(function (err) {
             console.error(err);
             return null;
@@ -218,7 +235,7 @@
       entries
         .filter(Boolean)
         .sort(function (a, b) {
-          return (parseInt(a.order, 10) || 0) - (parseInt(b.order, 10) || 0);
+          return b._date.localeCompare(a._date);
         })
         .forEach(function (data) {
           container.appendChild(renderFn(data));
@@ -227,8 +244,9 @@
   }
 
   // Add a filename here whenever a new paper/project markdown file is added.
-  var PUBLICATIONS = ["upfusion-2024.md", "skeletons-2020.md", "dehaze-2020.md"];
-  var PROJECTS = ["photon-mapping-2023.md", "jetson-tinyyolo.md"];
+  // Newest-first ordering is derived automatically from each file's YYMMDD prefix.
+  var PUBLICATIONS = ["241001-upfusion.md", "200601-skeletons.md", "200101-dehaze.md"];
+  var PROJECTS = ["231201-photon-mapping.md", "200101-jetson-tinyyolo.md"];
 
   loadCollection("content/publications/", PUBLICATIONS, "publications-list", renderPublication);
   loadCollection("content/projects/", PROJECTS, "projects-list", renderProject);

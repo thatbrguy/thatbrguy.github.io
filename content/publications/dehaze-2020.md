@@ -1,0 +1,10 @@
+---
+title: Single Image Haze Removal using a Generative Adversarial Network
+authors: Bharath Raj N., Venkateswaran N.
+venue: International Conference on Wireless Communications Signal Processing and Networking (WiSPNET) 2020
+order: 3
+image: assets/img/publication_preview/dehaze_img.png
+summary: An end-to-end conditional GAN, with a Tiramisu-based generator and a patch discriminator, that removes haze from a single image without estimating a transmission map.
+paper: https://arxiv.org/abs/1810.09479
+code: https://github.com/thatbrguy/Dehaze-GAN
+---

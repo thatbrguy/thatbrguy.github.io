@@ -1,0 +1,266 @@
+:root {
+  --bg: #ffffff;
+  --fg: #1a1a1a;
+  --muted: #6b6b6b;
+  --border: #e5e5e5;
+  --link: #1a1a1a;
+  --accent: #3b6ef2;
+  --max-width: 920px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #121212;
+    --fg: #e8e8e8;
+    --muted: #9a9a9a;
+    --border: #2a2a2a;
+    --link: #e8e8e8;
+    --accent: #7aa2ff;
+  }
+}
+
+:root[data-theme="dark"] {
+  --bg: #121212;
+  --fg: #e8e8e8;
+  --muted: #9a9a9a;
+  --border: #2a2a2a;
+  --link: #e8e8e8;
+  --accent: #7aa2ff;
+}
+
+:root[data-theme="light"] {
+  --bg: #ffffff;
+  --fg: #1a1a1a;
+  --muted: #6b6b6b;
+  --border: #e5e5e5;
+  --link: #1a1a1a;
+  --accent: #3b6ef2;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  color-scheme: light dark;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 4rem 1.25rem 2rem;
+}
+
+#theme-toggle {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  background: var(--bg);
+  color: var(--fg);
+  font-size: 1rem;
+  line-height: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+#theme-toggle:hover {
+  border-color: var(--accent);
+}
+#theme-toggle-icon {
+  display: flex;
+}
+#theme-toggle-icon svg {
+  width: 17px;
+  height: 17px;
+  display: block;
+}
+
+.intro {
+  display: flex;
+  gap: 2.5rem;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 3.5rem;
+}
+
+.avatar {
+  width: 190px;
+  height: 190px;
+  border-radius: 12px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+h1 {
+  font-size: 1.65rem;
+  margin: 0 0 0.35rem;
+  font-weight: 600;
+}
+
+.subtitle {
+  margin: 0 0 1.1rem;
+  color: var(--muted);
+  font-size: 0.98rem;
+}
+
+.bio {
+  margin: 0 0 0.9rem;
+  font-size: 0.98rem;
+}
+
+a {
+  color: var(--link);
+  text-decoration: underline;
+  text-decoration-color: var(--border);
+  text-underline-offset: 2px;
+}
+a:hover {
+  text-decoration-color: var(--accent);
+  color: var(--accent);
+}
+
+.links {
+  margin-top: 1.25rem;
+  font-size: 0.95rem;
+}
+.links .sep {
+  margin: 0 0.5rem;
+  color: var(--muted);
+}
+.links a {
+  text-decoration: none;
+}
+.links a:hover {
+  text-decoration: underline;
+}
+
+.section {
+  margin-bottom: 3rem;
+}
+
+.section h2 {
+  font-size: 1.05rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+  margin: 0 0 1.25rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.entry-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+.entry {
+  display: flex;
+  gap: 1.25rem;
+  align-items: flex-start;
+}
+
+.entry-thumb {
+  width: 280px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 8px;
+  background: var(--border);
+  flex-shrink: 0;
+}
+
+.entry-body {
+  flex: 1;
+  min-width: 0;
+}
+
+.entry-title {
+  font-size: 1.02rem;
+  font-weight: 600;
+  margin: 0 0 0.3rem;
+}
+
+.entry-meta {
+  margin: 0 0 0.4rem;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.entry-authors {
+  margin: 0 0 0.15rem;
+  font-size: 0.92rem;
+}
+
+.entry-venue {
+  margin: 0 0 0.5rem;
+  color: var(--muted);
+  font-size: 0.88rem;
+  font-style: italic;
+}
+
+.entry-summary {
+  margin: 0 0 0.5rem;
+  font-size: 0.96rem;
+}
+
+.entry-links {
+  margin: 0;
+  font-size: 0.92rem;
+}
+.entry-links a {
+  text-decoration: none;
+}
+.entry-links a:hover {
+  text-decoration: underline;
+}
+.entry-links .sep {
+  margin: 0 0.45rem;
+  color: var(--muted);
+}
+
+.site-footer {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 1rem 1.5rem 3rem;
+  color: var(--muted);
+  font-size: 0.85rem;
+  text-align: center;
+}
+
+@media (max-width: 560px) {
+  .intro {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .avatar {
+    width: 120px;
+    height: 120px;
+  }
+  .links {
+    text-align: center;
+  }
+  .entry {
+    flex-direction: column;
+  }
+  .entry-thumb {
+    width: 100%;
+    height: auto;
+  }
+}

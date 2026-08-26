@@ -1,6 +1,6 @@
 ---
 title: Progressive Photon Mapping
-context: 15-668: Physics-based Rendering, CMU (Project Submission)
+context: 15-668: Physics-based Rendering, CMU
 image: assets/img/publication_preview/rendering_competition.png
 summary: Added progressive photon mapping, a GGX BRDF, and directional lighting to a custom ray tracer to realistically render caustics in a swimming pool scene.
 links:

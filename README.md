@@ -29,8 +29,6 @@ Create `content/publications/<slug>.md`:
 title: Paper title
 authors: First Author, Second Author
 venue: Conference/Journal YEAR
-order: 1
-summary: One sentence describing the paper.
 project_page: https://...   (optional)
 paper: https://...           (optional)
 code: https://...            (optional)

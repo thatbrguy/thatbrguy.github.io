@@ -245,7 +245,7 @@
 
   // Add a filename here whenever a new paper/project markdown file is added.
   // Newest-first ordering is derived automatically from each file's YYMMDD prefix.
-  var PUBLICATIONS = ["260526-g3t.md", "260520-flatpack.md", "241001-upfusion.md", "200601-skeletons.md", "200101-dehaze.md"];
+  var PUBLICATIONS = ["260526-g3t.md", "260520-flatpack.md", "241001-upfusion.md", "200101-dehaze.md"];
   var PROJECTS = ["231201-photon-mapping.md", "200101-jetson-tinyyolo.md"];
 
   loadCollection("content/publications/", PUBLICATIONS, "publications-list", renderPublication);

@@ -168,22 +168,27 @@ a:hover {
 
 .entry {
   display: flex;
-  gap: 1.25rem;
-  align-items: flex-start;
+  gap: 1.5rem;
+  align-items: center;
+  min-height: 176px;
 }
 
 .entry-thumb {
   width: 280px;
+  aspect-ratio: 16 / 9;
   height: auto;
   object-fit: contain;
   border-radius: 8px;
-  background: var(--border);
+  background: var(--bg);
+  border: 1px solid var(--border);
+  padding: 8px;
   flex-shrink: 0;
 }
 
 .entry-body {
   flex: 1;
   min-width: 0;
+  line-height: 1.45;
 }
 
 .entry-title {
@@ -200,8 +205,12 @@ a:hover {
 }
 
 .entry-authors {
-  margin: 0 0 0.15rem;
-  font-size: 0.92rem;
+  margin: 0 0 0.2rem;
+  font-size: 0.88rem;
+  color: var(--muted);
+}
+.entry-authors b {
+  color: var(--fg);
 }
 
 .entry-venue {
@@ -248,9 +257,10 @@ a:hover {
   }
   .entry {
     flex-direction: column;
+    align-items: stretch;
+    min-height: 0;
   }
   .entry-thumb {
     width: 100%;
-    height: auto;
   }
 }

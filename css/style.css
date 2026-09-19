@@ -163,7 +163,7 @@ a:hover {
 .entry-list {
   display: flex;
   flex-direction: column;
-  gap: 1.75rem;
+  gap: 1rem;
 }
 
 .entry {
@@ -179,9 +179,6 @@ a:hover {
   height: auto;
   object-fit: contain;
   border-radius: 8px;
-  background: var(--bg);
-  border: 1px solid var(--border);
-  padding: 8px;
   flex-shrink: 0;
 }
 
@@ -249,8 +246,9 @@ a:hover {
     text-align: center;
   }
   .avatar {
-    width: 120px;
-    height: 120px;
+    order: -1;
+    width: 160px;
+    height: 160px;
   }
   .links {
     text-align: center;

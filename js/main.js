@@ -48,11 +48,6 @@
     });
   }
 
-  var yearEl = document.getElementById("year");
-  if (yearEl) {
-    yearEl.textContent = new Date().getFullYear();
-  }
-
   var emailLink = document.getElementById("email-link");
   if (emailLink) {
     emailLink.href = "mailto:" + "bharathrajn98" + "@" + "gmail.com";

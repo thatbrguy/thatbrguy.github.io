@@ -151,10 +151,11 @@ a:hover {
 }
 
 .section h2 {
-  font-size: 1.05rem;
+  font-size: 1rem;
+  font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.06em;
-  color: var(--muted);
+  letter-spacing: 0.08em;
+  color: var(--fg);
   margin: 0 0 1.25rem;
   padding-bottom: 0.5rem;
   border-bottom: 1px solid var(--border);
@@ -230,13 +231,45 @@ a:hover {
   color: var(--muted);
 }
 
-.site-footer {
-  max-width: var(--max-width);
-  margin: 0 auto;
-  padding: 1rem 1.5rem 3rem;
+.cv-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.cv-group-title {
+  font-size: 0.98rem;
+  font-weight: 700;
+  margin: 0 0 0.5rem;
+}
+
+.cv-items {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+#teaching-service .cv-items,
+#honors-awards .cv-items {
+  list-style: disc;
+  padding-left: 1.1rem;
+}
+
+.cv-item {
+  font-size: 0.92rem;
+}
+
+.cv-item-text {
+  display: block;
+}
+
+.cv-item-date {
+  display: block;
   color: var(--muted);
-  font-size: 0.85rem;
-  text-align: center;
+  font-size: 0.88rem;
 }
 
 @media (max-width: 560px) {
